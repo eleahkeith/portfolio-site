@@ -1,26 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './styles/App.css';
+import './styles/reset.css';
 
-function App() {
+const HomePage = () => {
+  const [navActive, setNavActive] = useState<boolean>(false);
+
+  const navToggle = () => {
+    setNavActive(!navActive);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="toolbar">
+        <div className="burger-icon" onClick={() => navToggle()}>
+          <div
+            className={`line1 ${navActive ? 'line1-active' : 'line1-inactive'}`}
+          ></div>
+          <div
+            className={`line2 ${navActive ? 'line2-active' : 'line2-inactive'}`}
+          ></div>
+          <div
+            className={`line1 ${navActive ? 'line3-active' : 'line3-inactive'}`}
+          ></div>
+        </div>
+        <div
+          className={`nav-overlay ${
+            navActive ? 'nav-overlay-active' : 'nav-overlay-hidden'
+          }`}
+        ></div>
+        <div
+          className={`nav-container ${navActive ? 'nav-active' : 'nav-hidden'}`}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <nav className="nav-menu">
+            <a className="nav-option" href="#">
+              Skills
+            </a>
+            <a className="nav-option" href="#">
+              Work
+            </a>
+            <a className="nav-option" href="#">
+              About
+            </a>
+            <a className="nav-option" href="#">
+              Contact
+            </a>
+          </nav>
+        </div>
+      </div>
+    </>
   );
-}
+};
 
-export default App;
+export default HomePage;
