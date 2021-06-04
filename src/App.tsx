@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/App.css';
 import './styles/reset.css';
+import './styles/App.css';
 import NavMenu from './components/nav-menu';
 import Home from './components/home';
 import Skills from './components/skills';
@@ -14,7 +14,7 @@ const App = () => {
       <div>
         <NavMenu />
       </div>
-      <div>
+      <div className="app-content">
         <Home />
         <Skills />
         <Work />

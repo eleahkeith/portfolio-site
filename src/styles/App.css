@@ -26,10 +26,14 @@
    
  }
 
+  html {
+  scroll-snap-type: y mandatory;
+ }
+
  #root {
    width: 100%;
    overflow-x: hidden;
-   
+   scroll-snap-type: y mandatory;
  }
 
  .toolbar {
@@ -110,39 +114,7 @@
  }
 
 
- /* component styles */
-
-.home {
-  height: 100vh;
-  width: 100vw;
-  background-color: red;
-  z-index: 1;
-}
-
-.skills {
-  height: 100vh;
-  width: 100vw;
-  background-color: blue;
-}
-
-.work {
-  height: 100vh;
-  width: 100vw;
-  background-color: yellow;
-}
-
-.about {
-  height: 100vh;
-  width: 100vw;
-  background-color: orange;
-}
-
-.contact {
-  height: 100vh;
-  width: 100vw;
-  background-color: purple;
-}
-
+ 
 /* nav overlay and transitions */
 
  .nav-overlay {
@@ -205,6 +177,50 @@
   font-size: 1.5em;
  }
 
+ /* component styles */
+
+ .app-content {
+   height: 100vh;
+ }
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  z-index: 1;
+  scroll-snap-align: start;
+
+}
+
+.skills {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  scroll-snap-align: start;
+}
+
+.work {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellow;
+  scroll-snap-align: start;
+}
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: orange;
+  scroll-snap-align: start;
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background-color: purple;
+  scroll-snap-align: start;
+}
+
+
 @media only screen and (min-width: 700px) {
   .burger-icon {
     display: none;
@@ -237,6 +253,10 @@
 
   .banner-container {
     width: 50%;
+  }
+
+  #root {
+    scroll-snap-type: y proximity;
   }
 }
 
