@@ -17,11 +17,13 @@ const Home = () => {
           desktop, and beyond.{' '}
         </div>
       </div>
+      <div className="desktop-photo-container">
+        <div className="photo-dummy"></div>
+      </div>
       <div className="home-button-cont">
         <button>See My Work</button>
         <button>Email Me</button>
       </div>
-      <div className="desktop-photo-container"></div>
     </div>
   );
 };

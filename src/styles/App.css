@@ -23,7 +23,7 @@
 
  body {
    background-color: #0A0A0A;
-   overflow-x: hidden;   
+   overflow: hidden;
  }
 
  #root {
@@ -35,7 +35,7 @@
  .toolbar {
    position: fixed;
    display: flex;
-   width: 100%;
+   width: 99vw;
    height: 10vh;
    }
 
@@ -134,9 +134,8 @@
    position: fixed;
    bottom: 0;
    top: 0;
-   overflow-x: hidden;
+   overflow: hidden;
    width: 100vw;
-   height: 100vh;
    background-color: rgba(60, 59, 64, .7);
 
 
@@ -150,8 +149,8 @@
 
 .nav-overlay-active {
   transform: translateX(0%);
-  transition: transform .05s, opacity .5s ease-in .05s;
-}
+  transition: transform .05s, opacity .5s ease-in;
+} 
 
 /* nav menu container and transitions */
 
@@ -160,17 +159,17 @@
   width: 100vw;
   display: flex;
   position: absolute;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 3;
 }
 
  .nav-container {
    background-color: #1F1F1F;
    position: fixed;
-   top: 0;
+   top: 0px;
    right: 0;
-   left: 45%;
-   bottom: 0;
+   left: 35%;
+   bottom: 0px;
    font-family: "poppins";
    letter-spacing: 5px;
    }
@@ -214,6 +213,7 @@
 
  .component-body {
    padding: 0 10px 0 10px;
+   height: 100%;
  }
 
  .app-content {
@@ -255,7 +255,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100vh;
   width: 100vw;
   padding-top: 10vh;
@@ -263,10 +263,14 @@
 }
 
 .home-text {
-  height: 40%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   padding: 0 21px 0 21px;
+}
+
+.desktop-photo-container {
+  display: none;
 }
 
 .greeting {
@@ -346,8 +350,18 @@
 
 
 @media only screen and (min-width: 700px) {
+  #root {
+    scroll-snap-type: y proximity;
+  }
+  
+  /* nav */
   .burger-icon {
     display: none;
+  }
+
+  .toolbar {
+    height: 15vh;
+    background-color: #0A0A0A;
   }
 
   .nav-container {
@@ -364,8 +378,9 @@
     flex-direction: row;
     float: right;
     height: 10vh;
-    margin: 0;
-    width: 50%;
+    margin: 20px;
+    width: 60%;
+    font-size: 1.25em;
   }
 
   .nav-hidden, .nav-active {
@@ -380,15 +395,167 @@
     width: 50%;
   }
 
-  #root {
-    scroll-snap-type: y proximity;
+  .header-logo {
+    align-self: center;
+    height: 75px;
+    width: 75px;
+    top: 50px;
+    left: 50px;
   }
+
+  /* components */
+
+  .home, .skills, .work, .about, .contact {
+    padding-top: 15vh;
+  }
+
+  .home {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-text {
+    margin-left: 50px;
+    justify-content: flex-start;
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
+    padding: 0;
+  }
+
+  .greeting, .name, .intro-one-liner  {
+    text-align: left;
+  }
+
+  .greeting {
+    font-size: 1em;
+    padding-bottom: 50px;
+  }
+
+  .name {
+    font-size: 4.5em;
+    line-height: .75;
+
+
+  }
+
+  .intro-one-liner {
+    font-size: 2em;
+    padding-bottom: 90px;
+  }
+
+  .intro-p {
+    font-size: 1.25em;
+  }
+
+  .home-button-cont {
+    width: 60%;
+    justify-self: center;
+  }
+
+  .desktop-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 35%;
+    height: 50%;
+  }
+
+  .photo-dummy {
+      height: 275px;
+      width: 225px;
+      background-color:rgba(60, 59, 64, .7);
+      border: none;
+      box-shadow: 20px 20px #E58C8A;
+  }
+
 }
 
+@media only screen and (min-width: 800px) {
+
+  .nav-menu {
+    font-size: 1.5em;
+
+  }
+  .greeting {
+    font-size: 1.25em;
+    padding-bottom: 75px;
+  }
+
+  .name {
+    font-size: 5.5em;
+    line-height: .75;
+
+
+  }
+
+  .intro-one-liner {
+    font-size: 2em;
+    padding-bottom: 90px;
+  }
+
+  .intro-p {
+    font-size: 1.25em;
+  }
+
+}
+
+@media only screen and (min-height: 850px) and (min-width: 1024px) {
+  
+  .header-logo {
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    top: 50px;
+    left: 50px;
+  }
+
+  .greeting {
+    font-size: 1.5em;
+    padding-bottom: 100px;
+  }
+
+  .name {
+    font-size: 6.75em;
+    line-height: .75;
+
+
+  }
+
+  .intro-one-liner {
+    font-size: 2.75em;
+    padding-bottom: 90px;
+  }
+
+  .intro-p {
+    font-size: 1.75em;
+  }
+}
 @media only screen and (max-width: 321px) {
   .name {
     font-size: 3.6em;
     letter-spacing: 0;
+  }
+
+  .intro-one-liner {
+    padding-bottom: 30px;
+  }
+
+  .home-text {
+    height: auto;
+  }
+
+  .intro-p {
+    font-size: 1em;
+    padding-bottom: 25px;
+  }
+
+  button {
+    width: 120px;
+    font-size: .9em;
   }
 }
 

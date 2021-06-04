@@ -17,6 +17,9 @@
 [backend]
 [ ]contentful
 
-[holes]
+[bugs]
 [ ]can't get scrollY to register anything other than 0, 
-    can't figure out how to get a new banner. 
+    can't figure out how to get a new banner.
+[x]when overlay is added, there is extra Y on my iphone. tried overflow hidden,
+    tried making overlay shorter than display...something to do with not being able to 
+    scroll maybe? for now, removing overlay and widening the menu.
