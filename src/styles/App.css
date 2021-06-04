@@ -22,19 +22,18 @@
 
  body {
    background-color: #0A0A0A;
-   display: flex;
    overflow-x: hidden;
    
  }
 
  #root {
-   display: flex;
    width: 100%;
    overflow-x: hidden;
    
  }
 
  .toolbar {
+   position: fixed;
    display: flex;
    width: 100%;
    height: 8vh;
@@ -111,18 +110,51 @@
  }
 
 
+ /* component styles */
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  z-index: 1;
+}
+
+.skills {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+}
+
+.work {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellow;
+}
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-color: orange;
+}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background-color: purple;
+}
+
 /* nav overlay and transitions */
 
  .nav-overlay {
    display: block;
-   position: absolute;
+   position: fixed;
    overflow-x: hidden;
    top: 0;
    left: 0;
    right: 0;
    bottom: 0;
    background-color: rgb(251, 255, 254, .1);
-   z-index: -5;
+   z-index: 1;
  }
 
  .nav-overlay-hidden {
@@ -141,14 +173,14 @@
 
  .nav-container {
    background-color: #1F1F1F;
-   position: absolute;
+   position: fixed;
    top: 0;
    right: 0;
    left: 45%;
    bottom: 0;
    font-family: "poppins";
    letter-spacing: 5px;
-   z-index: 5;
+   z-index: 9;
  }
 
 
@@ -207,3 +239,4 @@
     width: 50%;
   }
 }
+

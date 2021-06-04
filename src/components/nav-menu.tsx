@@ -8,7 +8,7 @@ const NavMenu = () => {
   };
 
   return (
-    <>
+    <div className="nav">
       <div className="toolbar">
         <div className="burger-icon" onClick={() => navToggle()}>
           <div
@@ -62,7 +62,7 @@ const NavMenu = () => {
           </nav>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
