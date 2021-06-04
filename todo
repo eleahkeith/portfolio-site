@@ -16,3 +16,7 @@
 
 [backend]
 [ ]contentful
+
+[holes]
+[ ]can't get scrollY to register anything other than 0, 
+    can't figure out how to get a new banner. 

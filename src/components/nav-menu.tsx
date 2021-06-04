@@ -20,6 +20,9 @@ const NavMenu = () => {
           <img
             className="header-logo"
             src={HeaderLogo}
+            onClick={() => {
+              console.log(window.pageYOffset);
+            }}
             alt="pink circle with white initials 'LK'"
           />
         </div>
