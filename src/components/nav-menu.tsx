@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HeaderLogo from '../images/header-logo.png';
 
 const NavMenu = () => {
   const [navActive, setNavActive] = useState<boolean>(false);
@@ -9,7 +10,19 @@ const NavMenu = () => {
 
   return (
     <>
+      <div
+        className={`nav-overlay ${
+          navActive ? 'nav-overlay-active' : 'nav-overlay-hidden'
+        }`}
+      ></div>
       <div className="toolbar">
+        <div className="banner-container">
+          <img
+            className="header-logo"
+            src={HeaderLogo}
+            alt="pink circle with white initials 'LK'"
+          />
+        </div>
         <div className="burger-icon" onClick={() => navToggle()}>
           <div
             className={`line1 ${navActive ? 'line1-active' : 'line1-inactive'}`}
@@ -22,14 +35,8 @@ const NavMenu = () => {
           ></div>
         </div>
         <div
-          className={`nav-overlay ${
-            navActive ? 'nav-overlay-active' : 'nav-overlay-hidden'
-          }`}
-        ></div>
-        <div
           className={`nav-container ${navActive ? 'nav-active' : 'nav-hidden'}`}
         >
-          <div className="banner-container">Leah Keith</div>
           <nav className="nav-menu">
             <a
               className="nav-option"

@@ -11,7 +11,7 @@ import Contact from './components/contact';
 const App = () => {
   return (
     <>
-      <div>
+      <div className="nav">
         <NavMenu />
       </div>
       <div className="app-content">

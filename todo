@@ -1,14 +1,15 @@
 
 [tsx]
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
-[ ]build out 4 components, all 100vh and 100vw
+[x]build out 4 components, all 100vh and 100vw
 [ ]create 'home' page content
 
 
 [css]
 [ ]animations for elements on home page
-[ ]scroll snapping for different components
-[ ]
+[x]scroll snapping for different components
+[ ]mobile photo visible with min height and max width
+[ ]desktop photo visible at min height and min width
 
 [backend]
 [ ]contentful
