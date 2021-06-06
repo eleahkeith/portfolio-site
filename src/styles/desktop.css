@@ -1,34 +1,66 @@
 @media only screen and (max-height: 849px) and (min-width: 1030px) {
 
+  .component-body {
+    flex-direction: row;
+  }
+
     .about-text {
         flex-wrap: nowrap;
         overflow-x: hidden;
         font-size: .85em;
         width: 50%;
+        height: 90%;
 
     }
+
+    .about-text {
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      font-size: .85em;
+      width: 50%;
+      height: 100%;
+
+  }
+
+  
+    #s4 { padding: 0;}
+
 
     .about-subhead {
         display: none;
     }
-
     .about-section {
-        margin: 0
+        margin: 0;
+        height: 90%;
+    }
+
+    .photo-carousel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
     }
 
     .carousel {
+      display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        padding-left: 20px;
+    }
 
+
+    .img-cont {
+      display: flex;
+      justify-content: space-around;
+      height: 75%;
+      width: 50%;
     }
 
     .tier2 {
         display: flex;
-    }
-
-    .carousel-dummy {
-        height: 80%;
-        width: 40%;
     }
 
     .swipe, .swipe-txt {
@@ -40,7 +72,13 @@
       margin-top: 20px;
     }
 
+    .mobile-photo-link {
+      display: none;
+    }
+
   }
+
+
   
 
 @media only screen and (min-height: 850px) and (min-width: 1030px) {
@@ -88,13 +126,11 @@
 
     /* about styles */
 
-    .about-text {
-      flex-wrap: nowrap;
-      overflow-x: hidden;
-      font-size: .85em;
-      width: 50%;
+    #about-body {
+      flex-direction: row;
+    }
 
-  }
+
 
   .about-subhead {
       display: none;
@@ -103,6 +139,8 @@
   .about-section {
       margin: 0
   }
+
+
 
   .carousel {
       flex-direction: row;
@@ -126,6 +164,10 @@
     
     .photo-carousel {
         width: 50%;
+    }
+
+    .carousel {
+      justify-content: space-around;
     }
 
     .about-text {

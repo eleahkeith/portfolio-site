@@ -1,13 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import '../styles/App.css';
+import BirthdayLuke from '../images/birthday-luke.png';
+import SamLuke from '../images/sam-luke.png';
+import PuppyLuke from '../images/puppy-luke.png';
+import PeakLuke from '../images/peak-luke.png';
 
 const About = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const openPhotoModal = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className="about" id="about">
       <div className="component-title">
         <h1>Who I Am</h1>
       </div>
-      <div className="component-body">
+      <div className="component-body" id="about-body">
         <div className="about-text">
           <div className="about-section" id="s1">
             <h3 className="about-subhead">Welcome!</h3>
@@ -52,20 +64,55 @@ const About = () => {
           « <span className="swipe-txt">swipe for more</span> »
         </div>
 
-        <div className="faux-button mobile-photo-link">
+        <div
+          onClick={() => openPhotoModal()}
+          className="faux-button mobile-photo-link"
+        >
           Want to see photos of my dog?
         </div>
         <div className="photo-carousel">
           <div className="carousel tier1">
-            <div className="carousel-dummy"></div>
-            <div className="carousel-dummy"></div>
+            <div className="img-cont">
+              <img
+                src={PeakLuke}
+                alt="Luke and I shaking hands in the Peak District"
+              />
+            </div>
+            <div className="img-cont">
+              <img
+                src={BirthdayLuke}
+                alt="Luke on his fourth birthday wearing a feather boa and a red sparkly hat"
+              />
+            </div>
           </div>
           <div className="carousel tier2">
-            <div className="carousel-dummy"></div>
-            <div className="carousel-dummy"></div>
+            <div className="img-cont">
+              <img
+                src={PuppyLuke}
+                alt="Luke as a puppy about to attack the camera"
+              />
+            </div>
+
+            <div className="img-cont">
+              <img
+                src={SamLuke}
+                alt="Luke and Sam relaxing in an Airbnb in Wales"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <Modal className="Modal" overlayClassName="Overlay" isOpen={isOpen}>
+        <div className="photo-modal">
+          <div className="photo-cont">
+            <div className="photo"></div>
+            <div className="photo"></div>
+            <div className="photo"></div>
+            <div className="photo"></div>
+          </div>
+          <span className="photo-modal-text">Ask and you shall receive!</span>
+        </div>
+      </Modal>
     </div>
   );
 };
