@@ -190,7 +190,7 @@
         flex-wrap: wrap;
     }
     .about-text {
-      width: 40%;
+      width: 50%;
       height: 90%;
     }
   
@@ -208,6 +208,19 @@
       width: 50%;
       height: 90%;
       margin: 10px
+    }
+
+    .carousel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 100%;
+    }
+
+    .tier2 {
+      display: none;
     }
   
     .carousel-dummy {
