@@ -46,6 +46,13 @@ const NavMenu = () => {
             <a
               className="nav-option"
               onClick={() => setNavActive(false)}
+              href="#about"
+            >
+              About
+            </a>
+            <a
+              className="nav-option"
+              onClick={() => setNavActive(false)}
               href="#skills"
             >
               Skills
@@ -56,13 +63,6 @@ const NavMenu = () => {
               href="#work"
             >
               Work
-            </a>
-            <a
-              className="nav-option"
-              onClick={() => setNavActive(false)}
-              href="#about"
-            >
-              About
             </a>
             <a
               className="nav-option"

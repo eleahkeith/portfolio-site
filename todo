@@ -9,7 +9,7 @@ Priorities
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
 [ ]add ionicons for socials and contact
 [ ]icons - fixed to bottom right in a column for desktop, in the nav menu for mobile
-[ ]build out skills
+[x]build out skills
 [x]build out about me
 [ ]build out contact
 [ ]build out work

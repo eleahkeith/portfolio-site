@@ -62,7 +62,7 @@
       padding-top: 10vh;
     }
 
-    h2 {
+    h3 {
         color: #8C8A93;
         padding-bottom: 10px;
       }
@@ -148,6 +148,38 @@
 
     .swipe, .swipe-txt {
         font-size: 1.1em;
+    }
+
+    /* skills styles */
+
+    #skills-body {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      height: 60%;
+      margin-top: 75px;
+      font-size: 1.25em;
+    }
+
+    .skills-cont {
+      text-align: center;
+      width: 50%;
+    }
+
+    .certs-cont {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .resume-btn {
+      position: relative;
+      left: 0;
+      width: 30%;
+      margin-top: 100px;
+      font-size: 1em;
+      text-decoration: none;
+      border: 1px solid #E58C8A;
     }
   }
   
@@ -237,6 +269,10 @@
     .swipe, .swipe-txt {
         width: 50%;
     }
-  
+
+    
+    #skills-body {
+      font-size: 1.4em;
+    }
   }
   

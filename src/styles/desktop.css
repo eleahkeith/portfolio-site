@@ -1,9 +1,9 @@
-@media only screen and (min-width: 1030px) {
+@media only screen and (max-height: 849px) and (min-width: 1030px) {
 
     .about-text {
         flex-wrap: nowrap;
         overflow-x: hidden;
-        font-size: .9em;
+        font-size: .85em;
         width: 50%;
 
     }
@@ -33,6 +33,11 @@
 
     .swipe, .swipe-txt {
         display: none;
+    }
+
+    #skills-body {
+      font-size: 1.25em;
+      margin-top: 20px;
     }
 
   }
@@ -83,6 +88,42 @@
 
     /* about styles */
 
+    .about-text {
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+      font-size: .85em;
+      width: 50%;
+
+  }
+
+  .about-subhead {
+      display: none;
+  }
+
+  .about-section {
+      margin: 0
+  }
+
+  .carousel {
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+  }
+
+  .tier2 {
+      display: flex;
+  }
+
+  .carousel-dummy {
+      height: 80%;
+      width: 40%;
+  }
+
+  .swipe, .swipe-txt {
+      display: none;
+  }
+
+    
     .photo-carousel {
         width: 50%;
     }
@@ -90,6 +131,8 @@
     .about-text {
         font-size: 1.15em;
     }
+
+    /*  */
 
   }
 

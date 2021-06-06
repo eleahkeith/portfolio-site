@@ -36,6 +36,28 @@
    box-sizing: border-box;
  }
 
+ h1 {
+  color: #FBFFFE;
+  font-family: "poppins";
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+h2 {
+  color: #E58C8A;
+  font-weight: bold;
+  font-family: "poppins";
+  font-size: 1.25em;
+}
+
+h3 {
+  color: #8C8A93;
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
  .toolbar {
    position: fixed;
    display: flex;
@@ -202,31 +224,21 @@
 
  /* component styles */
 
- h1 {
-   color: #FBFFFE;
-   font-family: "poppins";
-   font-size: 2em;
-   font-weight: bold;
-   letter-spacing: 5px;
-   text-align: center;
- }
 
- h2 {
-   color: #8C8A93;
-   font-size: 1.25em;
-   padding-bottom: 10px;
- }
 
  .component-title {
    padding: 25px 10px 20px 10px;
  }
 
  .component-body {
+   position: relative;
    display: flex;
    flex-direction: column;
    margin: 10px 20px 10px 20px;
    padding-bottom: 50px;
    height: 80%;
+   color: #FBFFFE;
+   font-family: "poppins";
  }
 
  .app-content {
@@ -246,7 +258,7 @@
     color: #E58C8A;
     font-family: "poppins";
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: transparent;
     border: 2px solid #E58C8A;
     border-radius: 3px;
@@ -325,7 +337,7 @@
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.5;
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 /* skills styles */
@@ -337,6 +349,53 @@
   padding-top: 10vh;
   scroll-snap-align: start;
 }
+
+#skills-body {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.skills-cont {
+  width: 100%;
+}
+
+.tech-skills-cont {
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.certs-cont {
+  display: none;
+}
+
+.explainer {
+  font-size: .75em;
+  color: #8C8A93;
+}
+
+.skills-list {
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+.resume-btn {
+  position: absolute;
+  top: -55px;
+  left: 25%;
+  width: 50%;
+  height: 50px;
+  color: #E58C8A;  
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+
 
 /* work styles */
 .work {
@@ -429,7 +488,7 @@
     font-size: 1.5em;
   }
   .name {
-    font-size: 3.6em;
+    font-size: 3.5em;
     letter-spacing: 0;
   }
 
@@ -446,13 +505,29 @@
     padding-bottom: 25px;
   }
 
-  .button-link {
+  .faux-button {
     width: 120px;
-    font-size: .9em;
+    font-size: 1em;
+  }
+
+  .mobile-photo-link {
+    width: 90%;
   }
 
   .about-text {
-    font-size: .7em;
+    font-size: .85em;
   }
+
+  .skills-cont {
+    font-size: .85em;
+  }
+
+  .resume-btn {
+    font-weight: regular;
+    width: 60%;
+    left: 20%;    
+  }
+
+
 }
 
