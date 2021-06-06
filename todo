@@ -1,16 +1,26 @@
+Priorities
+[x]1. write content for about me and skills
+[ ]2. build skills, about me, and contact along with styles for desktop/mobile
+[ ]3. animations
+[ ]4. build work and style
+
 
 [tsx]
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
-[ ]set up menu links to go to sections
-[ ]build button functionality
-[ ]link logo to home
-[ ]take off backgrounds and add basic skeleton of component content
-
+[ ]add ionicons for socials and contact
+[ ]icons - fixed to bottom right in a column for desktop, in the nav menu for mobile
+[ ]build out skills
+[x]build out about me
+[ ]build out contact
+[ ]build out work
+[ ]about - ignore y scrolls on internal container
+[ ]scrollbars - hide? style? 
 
 
 [css]
+[ ]style for phone on side
+[ ]move media queries to different files
 [ ]animations for elements on home page
-[ ]style home page for desktop
 [ ]mobile photo visible with min height and max width
 [ ]desktop photo visible at min height and min width
 
@@ -18,6 +28,7 @@
 [ ]contentful
 
 [bugs]
+[ ]nav bar is over the scroll bar on desktop
 [ ]can't get scrollY to register anything other than 0, 
     can't figure out how to get a new banner.
 [x]when overlay is added, there is extra Y on my iphone. tried overflow hidden,

@@ -17,14 +17,16 @@ const NavMenu = () => {
       ></div>
       <div className="toolbar">
         <div className="banner-container">
-          <img
-            className="header-logo"
-            src={HeaderLogo}
-            onClick={() => {
-              console.log(window.pageYOffset);
-            }}
-            alt="pink circle with white initials 'LK'"
-          />
+          <a href="#home">
+            <img
+              className="header-logo"
+              src={HeaderLogo}
+              onClick={() => {
+                console.log(window.pageYOffset);
+              }}
+              alt="pink circle with white initials 'LK'"
+            />
+          </a>
         </div>
         <div className="burger-icon" onClick={() => navToggle()}>
           <div
@@ -44,28 +46,28 @@ const NavMenu = () => {
             <a
               className="nav-option"
               onClick={() => setNavActive(false)}
-              href="#"
+              href="#skills"
             >
               Skills
             </a>
             <a
               className="nav-option"
               onClick={() => setNavActive(false)}
-              href="#"
+              href="#work"
             >
               Work
             </a>
             <a
               className="nav-option"
               onClick={() => setNavActive(false)}
-              href="#"
+              href="#about"
             >
               About
             </a>
             <a
               className="nav-option"
               onClick={() => setNavActive(false)}
-              href="#"
+              href="#contact"
             >
               Contact
             </a>

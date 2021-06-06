@@ -1,0 +1,65 @@
+@media only screen and (min-height: 850px) and (min-width: 1030px) {
+  
+    .header-logo {
+      align-self: center;
+      height: 100px;
+      width: 100px;
+      top: 20px;
+      left: 20px;
+    }
+  
+    .toolbar, .nav-menu, .nav-container {
+      height: 15vh;
+    }
+  
+    .home, .skills, .work, .about, .contact {
+      padding-top: 15vh;
+    }
+  
+    .greeting {
+      font-size: 1.5em;
+      padding-bottom: 100px;
+    }
+  
+    .name {
+      font-size: 6.75em;
+      line-height: .75;
+  
+  
+    }
+  
+    .intro-one-liner {
+      font-size: 2.75em;
+      padding-bottom: 90px;
+    }
+  
+    .intro-p {
+      font-size: 1.75em;
+    }
+  
+    .desktop-photo-container {
+      width: 35%;
+    }
+
+    /* about styles */
+    .about-text {
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        font-size: 1em;
+        width: 60%;
+
+    }
+
+    .about-section {
+        margin: 0
+    }
+
+    .photo-carousel {
+        width: 40%;
+    }
+
+    .swipe, .swipe-txt {
+        display: none;
+    }
+  }
+  

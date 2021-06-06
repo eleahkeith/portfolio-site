@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-text">
         <div className="greeting">Hello! My name is</div>
         <div className="name">Leah Keith</div>
@@ -21,8 +21,17 @@ const Home = () => {
         <div className="photo-dummy"></div>
       </div>
       <div className="home-button-cont">
-        <button>See My Work</button>
-        <button>Email Me</button>
+        <a className="faux-button btn-home-page" href="#work">
+          See My Work
+        </a>
+        <a
+          className="faux-button btn-home-page"
+          href="mailto:eleahkeith@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Email Me
+        </a>
       </div>
     </div>
   );

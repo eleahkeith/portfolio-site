@@ -13,7 +13,7 @@
  * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;   
+  padding: 0;
  }
 
  a {
@@ -30,12 +30,16 @@
    width: 100%;
    overflow-x: hidden;
    scroll-snap-type: y mandatory;
+   background-color: #0A0A0A;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
  }
 
  .toolbar {
    position: fixed;
    display: flex;
-   width: 99vw;
+   width: 100%;
    height: 10vh;
    }
 
@@ -207,17 +211,27 @@
    text-align: center;
  }
 
+ h2 {
+   color: #8C8A93;
+   font-size: 1.25em;
+   padding-bottom: 10px;
+ }
+
  .component-title {
-   padding: 10px 10px 0 10px;
+   padding: 25px 10px 20px 10px;
  }
 
  .component-body {
-   padding: 0 10px 0 10px;
-   height: 100%;
+   display: flex;
+   flex-direction: column;
+   margin: 10px 20px 10px 20px;
+   padding-bottom: 50px;
+   height: 80%;
  }
 
  .app-content {
    height: 100vh;
+   width: 100vw;
    z-index: 0;
    }
 
@@ -227,17 +241,22 @@
     justify-content: space-around;
   }
 
-   button {
+  .faux-button {
+    padding: 10px;
+    color: #E58C8A;
+    font-family: "poppins";
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: transparent;
+    border: 2px solid #E58C8A;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.6;
+
+  }
+   .btn-home-page {
      height: 50px;
      width: 150px;
-     padding: 10px;
-     color: #E58C8A;
-     font-family: "poppins";
-     font-weight: bold;
-     font-size: 1.1em;
-     background-color: transparent;
-     border: 2px solid #E58C8A;
-     border-radius: 3px;
    }
 
   /* .underline-text::before {
@@ -266,7 +285,7 @@
   height: 70%;
   display: flex;
   flex-direction: column;
-  padding: 0 21px 0 21px;
+  margin: 0 20px 0 20px;
 }
 
 .desktop-photo-container {
@@ -303,7 +322,7 @@
 .intro-p {
   font-family: "poppins";
   color: #FBFFFE;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1px;
   line-height: 1.5;
   font-size: 1.05em;
@@ -329,14 +348,68 @@
   scroll-snap-align: start;
 }
 
+/* about styles */
+
 .about {
+  position: relative;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
   padding-top: 10vh;
   scroll-snap-align: start;
+  font-family: "poppins";
+  font-size: 1em;
+
 }
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+  height: 63%;
+  width: 99%;
+  color: #FBFFFE;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  text-align: left;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.about-section {
+
+  margin-right: 250px;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+
+.mobile-photo-link {
+  position: absolute;
+  width: 90%;
+  bottom: 18%;
+  left: 5%;
+}
+
+.photo-carousel {
+  display: none;
+}
+
+.swipe, .swipe-txt {
+  color: #8C8A93;
+  text-align: center;
+}
+
+
+/* contact styles */
 
 .contact {
   display: flex;
@@ -349,192 +422,12 @@
 }
 
 
-@media only screen and (min-width: 700px) {
-  #root {
-    scroll-snap-type: y proximity;
-  }
-  
-  /* nav */
-  .burger-icon {
-    display: none;
-  }
 
-  .toolbar {
-    height: 15vh;
-    background-color: #0A0A0A;
-  }
-
-  .nav-container {
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    flex-direction: row;
-    justify-content: flex-end;
-    left: 0;
-    background: transparent;
-  }
-
-  .nav-menu {
-    flex-direction: row;
-    float: right;
-    height: 10vh;
-    margin: 20px;
-    width: 60%;
-    font-size: 1.25em;
-  }
-
-  .nav-hidden, .nav-active {
-    transform: translateX(0%);
-  }
-
-  .nav-overlay {
-    display: none;
-  }
-
-  .banner-container {
-    width: 50%;
-  }
-
-  .header-logo {
-    align-self: center;
-    height: 75px;
-    width: 75px;
-    top: 50px;
-    left: 50px;
-  }
-
-  /* components */
-
-  .home, .skills, .work, .about, .contact {
-    padding-top: 15vh;
-  }
-
-  .home {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .home-text {
-    margin-left: 50px;
-    justify-content: flex-start;
-    margin-top: 50px;
-    width: 50%;
-    height: auto;
-    padding: 0;
-  }
-
-  .greeting, .name, .intro-one-liner  {
-    text-align: left;
-  }
-
-  .greeting {
-    font-size: 1em;
-    padding-bottom: 50px;
-  }
-
-  .name {
-    font-size: 4.5em;
-    line-height: .75;
-
-
-  }
-
-  .intro-one-liner {
-    font-size: 2em;
-    padding-bottom: 90px;
-  }
-
-  .intro-p {
-    font-size: 1.25em;
-  }
-
-  .home-button-cont {
-    width: 60%;
-    justify-self: center;
-  }
-
-  .desktop-photo-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 35%;
-    height: 50%;
-  }
-
-  .photo-dummy {
-      height: 275px;
-      width: 225px;
-      background-color:rgba(60, 59, 64, .7);
-      border: none;
-      box-shadow: 20px 20px #E58C8A;
-  }
-
-}
-
-@media only screen and (min-width: 800px) {
-
-  .nav-menu {
-    font-size: 1.5em;
-
-  }
-  .greeting {
-    font-size: 1.25em;
-    padding-bottom: 75px;
-  }
-
-  .name {
-    font-size: 5.5em;
-    line-height: .75;
-
-
-  }
-
-  .intro-one-liner {
-    font-size: 2em;
-    padding-bottom: 90px;
-  }
-
-  .intro-p {
-    font-size: 1.25em;
-  }
-
-}
-
-@media only screen and (min-height: 850px) and (min-width: 1024px) {
-  
-  .header-logo {
-    align-self: center;
-    height: 100px;
-    width: 100px;
-    top: 50px;
-    left: 50px;
-  }
-
-  .greeting {
-    font-size: 1.5em;
-    padding-bottom: 100px;
-  }
-
-  .name {
-    font-size: 6.75em;
-    line-height: .75;
-
-
-  }
-
-  .intro-one-liner {
-    font-size: 2.75em;
-    padding-bottom: 90px;
-  }
-
-  .intro-p {
-    font-size: 1.75em;
-  }
-}
 @media only screen and (max-width: 321px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
   .name {
     font-size: 3.6em;
     letter-spacing: 0;
@@ -553,9 +446,13 @@
     padding-bottom: 25px;
   }
 
-  button {
+  .button-link {
     width: 120px;
     font-size: .9em;
+  }
+
+  .about-text {
+    font-size: .7em;
   }
 }
 
