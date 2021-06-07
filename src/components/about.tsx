@@ -74,12 +74,14 @@ const About = () => {
           <div className="carousel tier1">
             <div className="img-cont">
               <img
+                className="pc-photo"
                 src={PeakLuke}
                 alt="Luke and I shaking hands in the Peak District"
               />
             </div>
             <div className="img-cont">
               <img
+                className="pc-photo"
                 src={BirthdayLuke}
                 alt="Luke on his fourth birthday wearing a feather boa and a red sparkly hat"
               />
@@ -88,6 +90,7 @@ const About = () => {
           <div className="carousel tier2">
             <div className="img-cont">
               <img
+                className="pc-photo"
                 src={PuppyLuke}
                 alt="Luke as a puppy about to attack the camera"
               />
@@ -95,6 +98,7 @@ const About = () => {
 
             <div className="img-cont">
               <img
+                className="pc-photo"
                 src={SamLuke}
                 alt="Luke and Sam relaxing in an Airbnb in Wales"
               />
