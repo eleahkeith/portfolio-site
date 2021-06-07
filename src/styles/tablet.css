@@ -167,12 +167,16 @@
     }
 
     .skills-cont {
-      text-align: center;
+      text-align: left;
       width: 50%;
     }
 
+    .skills-list {
+      text-align: left;
+    }
+
     .certs-cont {
-      display: block;
+      display: flex;;
       width: 100%;
       text-align: center;
     }
@@ -186,6 +190,8 @@
       text-decoration: none;
       border: 1px solid #E58C8A;
     }
+
+    /* contact styles */
 
     .icon-set-mobile {
       display: none;
@@ -205,12 +211,22 @@
       margin: 10px;
     }
 
-    #email {
-      height: 50px;
-      width: 50px;
-
+    #contact-body {
+      flex-direction: column;
+      font-size: 1.5em;
     }
 
+    .contact-list {
+      margin: 50px 0 50px 0;
+    }
+
+    .reach-out-mobile {
+      display: none;
+    }
+
+    .reach-out {
+      display: block;
+    }
 
   }
   

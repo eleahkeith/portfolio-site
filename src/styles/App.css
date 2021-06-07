@@ -390,7 +390,14 @@ h3 {
 }
 
 .skills-cont {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.skills-subhead {
+  width: 100%;
+  text-align: center;
 }
 
 .tech-skills-cont {
@@ -541,6 +548,11 @@ h3 {
   overflow-y: hidden;
 }
 
+#contact-body {
+  line-height: 1.5;
+  align-items: center;
+}
+
 .icon-set {
   display: none;
 }
@@ -554,11 +566,37 @@ h3 {
 }
 
 .soc-icons-mobile {
-  height: 50px;
+  width: 50px;
   margin: 10px;
 }
 
+.contact-subhead {
+  width: 100%;
+}
 
+.contact-list {
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+li::before {
+  content: "✨";
+  padding: 15px;
+}
+
+.icons-contact {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.reach-out-mobile {
+  font-size: .9em;
+}
+
+.reach-out {
+  display: none;
+}
 
 @media only screen and (max-width: 321px) {
 
@@ -606,6 +644,9 @@ h3 {
     left: 20%;    
   }
 
+  .icons-contact {
+    width: 100%;
+  }
 
 }
 

@@ -66,6 +66,11 @@
       margin-top: 20px;
     }
 
+    .skills-cont {
+      display: flex;
+      align-items: center;
+    }
+
     .mobile-photo-link {
       display: none;
     }
@@ -197,6 +202,8 @@
       display: none;
   }
 
+
+
     
     .photo-carousel {
         width: 50%;
@@ -209,6 +216,19 @@
     .about-text {
         font-size: 1.15em;
     }
+
+    /* skills */
+
+    #skills-body {
+      font-size: 1.25em;
+      margin-top: 20px;
+    }
+
+    .skills-cont {
+      display: flex;
+      align-items: center;
+    }
+
 
     /* icons */
 

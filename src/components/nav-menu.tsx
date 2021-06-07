@@ -73,9 +73,8 @@ const NavMenu = () => {
               Contact
             </a>
           </nav>
-          <div className="icon-set-mobile">
-            <IconSetMobile />
-          </div>
+
+          <IconSetMobile />
         </div>
       </div>
     </>

@@ -10,7 +10,7 @@ const Skills = () => {
       </div>
       <div className="component-body" id="skills-body">
         <div className="skills-cont tech-skills-cont">
-          <h2>Tech Skills</h2>
+          <h2 className="skills-subhead">Tech Skills</h2>
           <ul className="skills-list">
             <li>React</li>
             <li>TypeScript</li>
@@ -23,7 +23,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className="skills-cont bonus-skills-cont">
-          <h2>Bonus Skills</h2>
+          <h2 className="skills-subhead">Bonus Skills</h2>
           <ul className="skills-list">
             <li>Agile</li>
             <li>Project Management</li>
@@ -36,7 +36,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className="skills-cont certs-cont">
-          <h2>Education & Certifications</h2>
+          <h2 className="skills-subhead">Education & Certifications</h2>
           <ul className="skills-list">
             <li>Web Development Certificate (23 Code Street, 2020)</li>
             <li>Lean Six Sigma Green Belt Certification (USF, 2020)</li>

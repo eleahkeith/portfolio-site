@@ -6,11 +6,27 @@ import { ReactComponent as LinkedinSVG } from '../images/icons-mobile/logo-linke
 
 export const IconSetMobile = () => {
   return (
-    <div className="set-mobile">
-      <EmailSVG className="soc-icons-mobile" />
-      <GithubSVG className="soc-icons-mobile" />
-      <LinkedinSVG className="soc-icons-mobile" />
-      <IgSVG className="soc-icons-mobile" />
+    <div className="icon-set-mobile">
+      <a href="mailto:eleahkeith@gmail.com" target="_blank" rel="noreferrer">
+        <EmailSVG className="soc-icons-mobile" />
+      </a>
+      <a href="https://github.com/eleahkeith" target="_blank" rel="noreferrer">
+        <GithubSVG className="soc-icons-mobile" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/leah-keith/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <LinkedinSVG className="soc-icons-mobile" />
+      </a>
+      <a
+        href="https://www.instagram.com/fakeleahkeith/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <IgSVG className="soc-icons-mobile" />
+      </a>
     </div>
   );
 };
