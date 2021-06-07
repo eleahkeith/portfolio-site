@@ -1,0 +1,250 @@
+@media only screen and (max-height: 849px) and (min-width: 1030px) {
+
+  .component-body {
+    flex-direction: row;
+  }
+
+  .name {
+    font-size: 6em;
+  }
+
+    .about-text {
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        font-size: .85em;
+        width: 50%;
+        height: 90%;
+
+    }
+  
+    #s4 { padding: 0;}
+
+
+    .about-subhead {
+        display: none;
+    }
+    .about-section {
+        margin: 0;
+        height: 100%;
+    }
+
+    .photo-carousel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+    }
+
+    .carousel {
+      display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+
+    .img-cont {
+      display: flex;
+      justify-content: space-around;
+      height: 75%;
+      width: 50%;
+    }
+
+    .tier2 {
+        display: flex;
+    }
+
+    .swipe, .swipe-txt {
+        display: none;
+    }
+
+    #skills-body {
+      font-size: 1.25em;
+      margin-top: 20px;
+    }
+
+    .skills-cont {
+      display: flex;
+      align-items: center;
+    }
+
+    .mobile-photo-link {
+      display: none;
+    }
+
+    .icon-set {
+      display: flex;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+    }
+    
+    .soc-icons {
+      height: 40px;
+      margin: 10px;
+    }
+
+  }
+
+
+
+
+  
+
+@media only screen and (min-height: 850px) and (min-width: 1030px) {
+  
+    .header-logo {
+      align-self: center;
+      height: 100px;
+      width: 100px;
+      top: 20px;
+      left: 20px;
+    }
+  
+    .toolbar, .nav-menu, .nav-container {
+      height: 15vh;
+    }
+  
+    .home, .skills, .work, .about, .contact {
+      padding-top: 15vh;
+    }
+  
+    .greeting {
+      font-size: 1.5em;
+      padding-bottom: 100px;
+    }
+  
+    .name {
+      font-size: 6.75em;
+      line-height: .75;
+  
+  
+    }
+  
+    .intro-one-liner {
+      font-size: 2.75em;
+      padding-bottom: 90px;
+    }
+  
+    .intro-p {
+      font-size: 1.75em;
+    }
+  
+    .desktop-photo-container {
+      width: 35%;
+    }
+
+    /* about styles */
+
+    #about-body {
+      flex-direction: row;
+    }
+
+    .about-section {
+      flex-direction: column;
+      margin: 0;
+      height: 90%;
+    }
+
+    .about-text {
+      height: 100%;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+  
+    }
+
+
+    .mobile-photo-link {
+      display: none;
+    }
+
+    .about-subhead {
+        display: none;
+    }
+
+    .photo-carousel {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+    }
+
+    .carousel {
+      display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        padding-left: 20px;
+  }
+
+  .img-cont {
+    display: flex;
+    height: 75%;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .tier2 {
+      display: flex;
+  }
+
+  .carousel-dummy {
+      height: 80%;
+      width: 40%;
+  }
+
+  .swipe, .swipe-txt {
+      display: none;
+  }
+
+
+
+    
+    .photo-carousel {
+        width: 50%;
+    }
+
+    .carousel {
+      justify-content: space-around;
+    }
+
+    .about-text {
+        font-size: 1.15em;
+    }
+
+    /* skills */
+
+    #skills-body {
+      font-size: 1.25em;
+      margin-top: 20px;
+    }
+
+    .skills-cont {
+      display: flex;
+      align-items: center;
+    }
+
+
+    /* icons */
+
+    .icon-set {
+      display: flex;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+    }
+    
+    .soc-icons {
+      height: 40px;
+      margin: 10px;
+    
+    }
+
+  }
+
+  
