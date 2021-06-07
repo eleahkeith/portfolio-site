@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import HeaderLogo from '../images/header-logo.png';
+import { IconSetMobile } from './icons-mobile';
 
 const NavMenu = () => {
   const [navActive, setNavActive] = useState<boolean>(false);
@@ -72,6 +73,9 @@ const NavMenu = () => {
               Contact
             </a>
           </nav>
+          <div className="icon-set-mobile">
+            <IconSetMobile />
+          </div>
         </div>
       </div>
     </>

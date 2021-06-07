@@ -9,6 +9,7 @@ import Skills from './components/skills';
 import Work from './components/work';
 import About from './components/about';
 import Contact from './components/contact';
+import { IconSet } from './components/icons';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Skills />
         <Work />
         <Contact />
+        <IconSet />
       </div>
     </>
   );

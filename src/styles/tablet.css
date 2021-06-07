@@ -186,6 +186,32 @@
       text-decoration: none;
       border: 1px solid #E58C8A;
     }
+
+    .icon-set-mobile {
+      display: none;
+    }
+
+    .icon-set {
+      display: flex;
+      position: fixed;
+      right: 25px;
+      bottom: 25px;
+  
+    }
+    
+    .soc-icons {
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+    }
+
+    #email {
+      height: 50px;
+      width: 50px;
+
+    }
+
+
   }
   
   @media only screen 
@@ -289,5 +315,18 @@
     #skills-body {
       font-size: 1.4em;
     }
+
+    .icon-set {
+      display: flex;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+    }
+    
+    .soc-icons {
+      height: 40px;
+      margin: 10px;
+    }
+
   }
   

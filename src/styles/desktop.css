@@ -70,7 +70,21 @@
       display: none;
     }
 
+    .icon-set {
+      display: flex;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+    }
+    
+    .soc-icons {
+      height: 40px;
+      margin: 10px;
+    }
+
   }
+
+
 
 
   
@@ -196,7 +210,20 @@
         font-size: 1.15em;
     }
 
-    /*  */
+    /* icons */
+
+    .icon-set {
+      display: flex;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+    }
+    
+    .soc-icons {
+      height: 40px;
+      margin: 10px;
+    
+    }
 
   }
 

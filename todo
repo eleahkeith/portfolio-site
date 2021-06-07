@@ -6,8 +6,6 @@ Priorities
 
 [tsx]
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
-[ ]add ionicons for socials and contact
-[ ]icons - fixed to bottom right in a column for desktop, in the nav menu for mobile
 [ ]build out contact
 [ ]build out work
 [ ]about - ignore y scrolls on internal container
