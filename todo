@@ -4,8 +4,7 @@ Priorities
 [ ]3. build work and style
 
 
-[animations]
-[ ]
+
 
 [tsx]
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
@@ -24,5 +23,5 @@ Priorities
 
 [bugs]
 [ ]nav bar is over the scroll bar on desktop
-[ ]can't get scrollY to register anything other than 0, 
-    can't figure out how to get a new banner.
+[ ]scrollY/scrollTop measuring 0, need to fix component heights
+[ ]FOUT when page first loads
