@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/reset.css';
 import './styles/App.css';
+import './styles/animations.css';
 import './styles/tablet.css';
 import './styles/desktop.css';
 import NavMenu from './components/nav-menu';
@@ -17,7 +18,10 @@ const App = () => {
       <div className="nav">
         <NavMenu />
       </div>
-      <div className="app-content">
+      <div
+        className="app-content"
+        onClick={() => console.log(document.body.scrollTop, window.pageYOffset)}
+      >
         <Home />
         <About />
         <Skills />

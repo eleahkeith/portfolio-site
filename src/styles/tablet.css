@@ -32,9 +32,6 @@
       font-size: 1.25em;
     }
   
-    .nav-hidden, .nav-active {
-      transform: translateX(0%);
-    }
   
     .nav-overlay {
       display: none;
@@ -344,5 +341,10 @@
       margin: 10px;
     }
 
+  }
+
+  html {
+    visibility: visible;
+    opacity: 1;
   }
   
