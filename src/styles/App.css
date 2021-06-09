@@ -256,9 +256,11 @@ h3 {
   font-size: 3.9em;
   color: var(--white);
   letter-spacing: 1px;
+  line-height: 1;
 }
 
 .intro-one-liner {
+  display: block;
   text-align: center;
   font-family: "poppins";
   font-weight: bold;
@@ -365,10 +367,11 @@ h3 {
 
 
 .mobile-photo-link {
-  position: absolute;
+  display: none;
+  /* position: absolute;
   width: 90%;
   bottom: 18%;
-  left: 5%;
+  left: 5%; */
 }
 
 .photo-carousel {
