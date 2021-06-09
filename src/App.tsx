@@ -18,17 +18,12 @@ const App = () => {
       <div className="nav">
         <NavMenu />
       </div>
-      <div
-        className="app-content"
-        onClick={() => console.log(document.body.scrollTop, window.pageYOffset)}
-      >
-        <Home />
-        <About />
-        <Skills />
-        <Work />
-        <Contact />
-        <IconSet />
-      </div>
+      <Home />
+      <About />
+      <Skills />
+      <Work />
+      <Contact />
+      <IconSet />
     </>
   );
 };

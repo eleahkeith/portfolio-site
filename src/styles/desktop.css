@@ -1,8 +1,8 @@
 @media only screen and (max-height: 849px) and (min-width: 1030px) {
 
-  .component-body {
-    flex-direction: row;
-  }
+.component-body {
+  flex-direction: row;
+}
 
   .nav-option {
     position: relative;
@@ -32,6 +32,7 @@
   }
 
     .about-text {
+      width: 50%;
         flex-wrap: nowrap;
         overflow-x: hidden;
         font-size: .85em;
@@ -53,13 +54,11 @@
 
     .photo-carousel {
       display: flex;
-      flex-direction: column;
       height: 100%;
       width: 50%;
     }
 
     .carousel {
-      display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -70,16 +69,13 @@
 
 
     .img-cont {
-      display: flex;
+      flex-direction: row;
       justify-content: space-around;
       height: 75%;
       width: 50%;
     }
 
 
-    .tier2 {
-        display: flex;
-    }
 
     .swipe, .swipe-txt {
         display: none;
@@ -91,7 +87,6 @@
     }
 
     .skills-cont {
-      display: flex;
       align-items: center;
     }
 
@@ -100,7 +95,7 @@
     }
 
     .icon-set {
-      display: flex;
+      flex-direction: row;
       position: fixed;
       right: 20px;
       bottom: 20px;
@@ -120,6 +115,10 @@
 
 @media only screen and (min-height: 850px) and (min-width: 1030px) {
   
+.component-body {
+  flex-direction: row;
+}
+
     .header-logo {
       align-self: center;
       height: 100px;
@@ -186,12 +185,7 @@
 
     /* about styles */
 
-    #about-body {
-      flex-direction: row;
-    }
-
     .about-section {
-      flex-direction: column;
       margin: 0;
       height: 90%;
     }
@@ -214,13 +208,11 @@
 
     .photo-carousel {
       display: flex;
-      flex-direction: column;
       width: 50%;
       height: 100%;
     }
 
     .carousel {
-      display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -230,14 +222,14 @@
   }
 
   .img-cont {
-    display: flex;
+    flex-direction: row;  
     height: 75%;
     width: 50%;
     justify-content: space-around;
   }
 
   .tier2 {
-      display: flex;
+      flex-direction: row;
   }
 
   .carousel-dummy {
@@ -272,7 +264,6 @@
     }
 
     .skills-cont {
-      display: flex;
       align-items: center;
     }
 
@@ -280,7 +271,7 @@
     /* icons */
 
     .icon-set {
-      display: flex;
+      flex-direction: row;
       position: fixed;
       right: 20px;
       bottom: 20px;
