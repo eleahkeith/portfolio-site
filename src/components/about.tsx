@@ -15,7 +15,7 @@ const About = () => {
   };
 
   return (
-    <div className="about" id="about">
+    <div className="component" id="about">
       <div className="component-title">
         <h1>Who I Am</h1>
       </div>

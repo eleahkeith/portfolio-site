@@ -84,7 +84,7 @@
   }
 
   .soc-icons:hover {
-      transform: translateY(-8px);
+      transform: translateY(-10px);
   }
 }
 
@@ -94,10 +94,18 @@
         transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
 
     }
-    .pc-photo {
-        transform:scale(1.2);
-      }
+    .pc-photo:hover {
+        transform: translateY(-10px);
+          }
 
+      .soc-icons {
+        transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+    }
+  
+    .soc-icons:hover {
+        transform: translateY(-10px);
+    }
+  
 
 }
 

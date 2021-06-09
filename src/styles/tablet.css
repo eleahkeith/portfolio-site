@@ -1,7 +1,4 @@
 @media only screen and (min-width: 700px) {
-    #root {
-      scroll-snap-type: y proximity;
-    }
     
     /* nav */
     .burger-icon {
@@ -14,7 +11,6 @@
     }
   
     .nav-container {
-      display: flex;
       width: 100%;
       height: 10vh;
       flex-direction: row;
@@ -54,10 +50,6 @@
     .component-body {
       margin: 50px;
     }
-  
-    .home, .skills, .work, .about, .contact {
-      padding-top: 10vh;
-    }
 
     h3 {
         color: #8C8A93;
@@ -65,7 +57,7 @@
       }
   
     /* home page styles */
-    .home {
+    #home {
       flex-direction: row;
       align-items: flex-start;
       justify-content: center;
@@ -76,7 +68,7 @@
       margin-left: 50px;
       justify-content: flex-start;
       margin-top: 50px;
-      width: 50%;
+      width: 100%;
       height: auto;
       padding: 0;
     }
@@ -112,14 +104,14 @@
       justify-self: center;
     }
   
-    .desktop-photo-container {
+    /* .desktop-photo-container {
       display: flex;
       justify-content: center;
       margin-top: 50px;
       margin-right: 50px;
       width: 30%;
       height: 50%;
-    }
+    } */
   
     .photo-dummy {
         height: 275px;
@@ -131,7 +123,7 @@
   
     /* about styles */
     .about-text {
-      justify-content: space-evenly;
+      /* justify-content: space-evenly; */
       font-size: 1.25em;
     }
   
@@ -173,7 +165,7 @@
     }
 
     .certs-cont {
-      display: flex;;
+      display: flex;
       width: 100%;
       text-align: center;
     }
@@ -196,6 +188,7 @@
 
     .icon-set {
       display: flex;
+      flex-direction: row;
       position: fixed;
       right: 25px;
       bottom: 25px;
@@ -298,7 +291,6 @@
     }
 
     .carousel {
-      display: flex;
       flex-direction: row;
       align-items: center;
       justify-items: space-around;
@@ -343,8 +335,4 @@
 
   }
 
-  html {
-    visibility: visible;
-    opacity: 1;
-  }
   

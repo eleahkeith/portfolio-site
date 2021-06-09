@@ -1,0 +1,10 @@
+:root {
+    /* colors */
+    --black: #0A0A0A;
+    --lighter-black: #1F1F1F;
+    --white: #FBFFFE;
+    --med-gray: #9B9AA2;
+    --pink: #E58C8A;
+    --overlay-gray: rgba(60, 59, 64, .7);
+}
+
