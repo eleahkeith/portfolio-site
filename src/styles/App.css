@@ -40,9 +40,6 @@
    min-height: 100vh;
    overflow-x: hidden;
    background-color: var(--black);
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
  }
 
  h1 {
@@ -121,28 +118,14 @@ h3 {
    cursor: pointer;
  }
 
- .line1 {
+
+
+ .line1, .line2, .line3 {
    margin: 2.5px;
    background-color: var(--pink);
    height: 3px;
    width: 25px;
  }
-
-
- .line2 {
-   margin: 2.5px;
-   background-color: var(--pink);
-   width: 25px;
-   height: 3px;
- }
-
- .line3 {
-   margin: 2.5px;
-   background-color: var(--pink);
-   width: 25px;
-   height: 3px;
- }
-
 
 
  
@@ -162,6 +145,13 @@ h3 {
 
 /* nav menu container and transitions */
 
+.component {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10vh;
+  line-height: 1.5;
+ }
 
 .nav {
   width: 100vw;
@@ -174,7 +164,7 @@ h3 {
    align-items: center;
    background-color: var(--lighter-black);
    position: fixed;
-   top: 0px;
+   top: 0;
    right: 0;
    left: 35%;
    bottom: 0px;
@@ -234,14 +224,12 @@ h3 {
      width: 150px;
    }
 
+
+
 /* home styles */
-.home {
-  position: relative;
+#home {
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10vh;
 }
 
 .home-text {
@@ -285,38 +273,32 @@ h3 {
   color: var(--white);
   text-align: center;
   letter-spacing: 1px;
-  line-height: 1.5;
   font-size: 1em;
 }
 
 /* skills styles */
-.skills {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10vh;
-}
+
 
 #skills-body {
   position: relative;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 40px;
+  justify-content: space-evenly;
   padding-bottom: 20px;
+  margin-top: 0px;
 }
 
 .skills-cont {
   width: 100%;
+  padding-top: 10px;
 }
 
 .skills-subhead {
+  text-align: left;
   width: 100%;
-  text-align: center;
 }
 
 .tech-skills-cont {
   text-align: left;
-  margin-bottom: 35px;
 }
 
 .certs-cont {
@@ -330,12 +312,11 @@ h3 {
 
 .skills-list {
   padding-top: 10px;
-  line-height: 1.5;
 }
 
 .resume-btn {
   position: absolute;
-  top: -55px;
+  top: -35px;
   left: 25%;
   width: 50%;
   height: 50px;
@@ -350,38 +331,22 @@ h3 {
 
 
 /* work styles */
-.work {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10vh;
-}
 
 /* about styles */
 
-.about {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10vh;
+#about {
   font-family: "poppins";
   font-size: 1em;
-
 }
 
 .about-text {
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
   align-items: center;
   justify-content: flex-start;
   height: 63%;
   width: 99%;
   color: var(--white);
   letter-spacing: .5px;
-  line-height: 1.5;
   text-align: left;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -447,16 +412,7 @@ h3 {
 
 /* contact styles */
 
-.contact {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 10vh;
-  overflow-y: hidden;
-}
-
 #contact-body {
-  line-height: 1.5;
   align-items: center;
 }
 
@@ -560,8 +516,4 @@ li::before {
 
 }
 
-html {
-  visibility: visible;
-  opacity: 1;
-}
 

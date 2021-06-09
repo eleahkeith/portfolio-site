@@ -4,7 +4,7 @@ import CV from '../images/leah-cv.pdf';
 const Skills = () => {
   const explainer = '(what is this?)';
   return (
-    <div className="skills" id="skills">
+    <div className="component" id="skills">
       <div className="component-title">
         <h1>What I Do Well</h1>
       </div>

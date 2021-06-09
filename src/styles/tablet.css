@@ -1,7 +1,4 @@
 @media only screen and (min-width: 700px) {
-    #root {
-      scroll-snap-type: y proximity;
-    }
     
     /* nav */
     .burger-icon {
@@ -53,10 +50,6 @@
     .component-body {
       margin: 50px;
     }
-  
-    .home, .skills, .work, .about, .contact {
-      padding-top: 10vh;
-    }
 
     h3 {
         color: #8C8A93;
@@ -64,7 +57,7 @@
       }
   
     /* home page styles */
-    .home {
+    #home {
       flex-direction: row;
       align-items: flex-start;
       justify-content: center;
