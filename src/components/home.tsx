@@ -1,4 +1,5 @@
 import React from 'react';
+import LeahPhoto from '../images/leah-photo.jpg';
 
 const Home = () => {
   return (
@@ -18,7 +19,9 @@ const Home = () => {
         </div>
       </div>
       <div className="desktop-photo-container">
-        <div className="photo-dummy"></div>
+        <div className="photo-dummy">
+          <img src={LeahPhoto} id="desktop-photo" alt="me smiling" />
+        </div>
       </div>
       <div className="home-button-cont">
         <a className="faux-button btn-home-page" href="#work">
