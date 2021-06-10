@@ -1,13 +1,11 @@
 /* colors
- var(--black) - off black - background
- 1F1F1F - light black, burger menu
- var(--white) - off white - main text
- var(--med-gray) - medium gray - secondary text
- var(--pink) - pink - accents
- var(--pink)d5 - pink but softer
+off black - background
+light black - burger menu
+ white - main text
+ medium gray - secondary text
+pink - accents
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@300&display=swap');
   @import url('./variables.css');
 
 
@@ -31,7 +29,7 @@
    position: relative;
    background-color: var(--black);
    overflow-x: hidden;
-
+   font-family: var(--main-font);
  }
 
  #root {
@@ -44,17 +42,16 @@
 
  h1 {
   color: var(--white);
-  font-family: "poppins";
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 5px;
   text-align: center;
+  line-height: 1;
 }
 
 h2 {
   color: var(--pink);
   font-weight: bold;
-  font-family: "poppins";
   font-size: 1.25em;
 }
 
@@ -80,8 +77,7 @@ h3 {
   bottom: 15%;
   left: 5%;
   right: 5%;
-  border-radius: 3px;
-  font-family: "poppins";
+  border-radius: var(--radius);
   color: var(--white);
 }
 
@@ -168,7 +164,6 @@ h3 {
    right: 0;
    left: 35%;
    bottom: 0px;
-   font-family: "poppins";
    letter-spacing: 5px;
    }
 
@@ -197,7 +192,6 @@ h3 {
    padding-bottom: 50px;
    height: 80%;
    color: var(--white);
-   font-family: "poppins";
  }
 
   .home-button-cont {
@@ -209,16 +203,17 @@ h3 {
   .faux-button {
     padding: 10px;
     color: var(--pink);
-    font-family: "poppins";
     font-weight: bold;
     font-size: 1em;
     background: transparent;
-    border: 2px solid var(--pink);
-    border-radius: 3px;
+    border: var(--bord-pnk);
+    border-radius: var(--radius);
     text-align: center;
     line-height: 1.6;
 
   }
+
+
    .btn-home-page {
      height: 50px;
      width: 150px;
@@ -243,7 +238,6 @@ h3 {
 
 .greeting {
   text-align: center;
-  font-family: "poppins";
   color: var(--pink);
   padding-bottom: 50px;
   letter-spacing: 2px;
@@ -251,7 +245,7 @@ h3 {
 
 .name {
   text-align: center;
-  font-family: "kalam";
+  font-family: var(--script-font);
   font-weight: bold;
   font-size: 3.9em;
   color: var(--white);
@@ -262,7 +256,6 @@ h3 {
 .intro-one-liner {
   display: block;
   text-align: center;
-  font-family: "poppins";
   font-weight: bold;
   color: var(--med-gray);
   padding-bottom: 75px;
@@ -271,7 +264,6 @@ h3 {
 }
 
 .intro-p {
-  font-family: "poppins";
   color: var(--white);
   text-align: center;
   letter-spacing: 1px;
@@ -327,7 +319,7 @@ h3 {
   text-decoration: underline;
   font-weight: bold;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: var(--radius);
 }
 
 
@@ -337,7 +329,6 @@ h3 {
 /* about styles */
 
 #about {
-  font-family: "poppins";
   font-size: 1em;
 }
 
@@ -499,9 +490,6 @@ li::before {
   .about-text {
     font-size: .85em;
   }
-
-
-
 
   .skills-cont {
     font-size: .85em;

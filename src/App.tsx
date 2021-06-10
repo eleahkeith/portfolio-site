@@ -1,9 +1,10 @@
 import React from 'react';
 import './styles/reset.css';
 import './styles/App.css';
-import './styles/animations.css';
 import './styles/tablet.css';
 import './styles/desktop.css';
+import './styles/variables.css';
+import './styles/animations.css';
 import NavMenu from './components/nav-menu';
 import Home from './components/home';
 import Skills from './components/skills';
