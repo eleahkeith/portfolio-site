@@ -38,24 +38,24 @@
 .nav-overlay-hidden {
     opacity: 0;
     transform: translateX(100%);
-    transition: transform .5s ease-in-out .5s, opacity .5s ease-out;
+    transition: transform .5s var(--bezier) .5s, opacity .5s var(--bezier);
     }
 
 .nav-overlay-active {
     transform: translateX(0%);
-    transition: transform .05s, opacity .5s ease-in;
+    transition: transform .05s, opacity .5s var(--bezier);
     } 
 
 
 /* nav menu */
 .nav-hidden {
     transform: translateX(100%);
-    transition: transform .5s cubic-bezier(0.08,-0.08, 0.48, 0.9);
+    transition: transform .5s var(--bezier);
    }
   
 .nav-active {
      transform: translateX(0%);
-     transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+     transition: var(--main-transition);
    }
   
 
@@ -70,43 +70,58 @@
 
 @media only screen and (max-height: 849px) and (min-width: 1030px) {
 .pc-photo {
-    transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+    transition: var(--main-transition);
 
 }
 
 .pc-photo:hover {
-    transform:scale(1.1);
+    transform: var(--hover-move-up);
   }
 
 
   .soc-icons {
-      transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+      transition: var(--main-transition);
   }
 
   .soc-icons:hover {
-      transform: translateY(-10px);
+      transform: var(--hover-move-up);
+  }
+
+  .faux-button, .resume-btn {
+      transition: background-color .5s var(--bezier);
+  }
+
+  .faux-button:hover, .resume-btn:hover {
+      background-color: var(--hover-background);
   }
 }
 
 
 @media only screen and (min-height: 850px) and (min-width: 1030px) {
     .pc-photo {
-        transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+        transition: var(--main-transition);
 
     }
     .pc-photo:hover {
-        transform: translateY(-10px);
-          }
+        transform: var(--hover-move-up);
+    }
 
       .soc-icons {
-        transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+        transition: var(--main-transition);
     }
   
     .soc-icons:hover {
-        transform: translateY(-10px);
+        transform: var(--hover-move-up);
+    }
+
+    .faux-button, .resume-btn {
+        transition: background-color .5s var(--bezier);
     }
   
-
+    .faux-button:hover, .resume-btn:hover {
+        background-color: var(--hover-background);
+    }
+  
 }
 
 

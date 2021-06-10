@@ -6,5 +6,18 @@
     --med-gray: #9B9AA2;
     --pink: #E58C8A;
     --overlay-gray: rgba(60, 59, 64, .7);
+    --gradient: linear-gradient(to top right, #E58C8A, #FBFFFE );
+    --bord-pnk: 2px solid var(--pink);
+    --radius: 3px;
+
+    /* fonts */
+    --main-font: "poppins";
+    --script-font: "kalam";
+
+    /* animations */
+    --main-transition: transform .5s cubic-bezier(0, 0.91, 0.99, 1.05);
+    --hover-move-up: translateY(-10px);
+    --hover-background: rgba(229, 140, 138, .2);
+    --bezier: cubic-bezier(0, 0.91, 0.99, 1.05);
 }
 
