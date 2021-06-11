@@ -148,34 +148,69 @@ const Work = () => {
       ({ projName }) => projName === proj
     );
     setActiveProject(project);
-    console.log(activeProject);
   };
 
+  // creates menu of projects
   const mappedNames = formattedProjects?.map((project) => (
     <div
       key={project.projName}
       id={project.projName}
-      className="project-menu-item"
+      className={`project-menu-item ${
+        activeProject?.projName === project.projName
+          ? 'project-active'
+          : 'project-inactive'
+      }`}
       onClick={() => handleClick(project.projName)}
     >
       {project.projName}
     </div>
   ));
 
+  const mappedTech = activeProject?.tech.map((techItem) => (
+    <li key={techItem} className="tech-item">
+      {techItem}
+    </li>
+  ));
   return (
     <div className="component" id="work">
       <div className="component-title">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1>What I've Made</h1>
       </div>
-      <div className="component-body">
+      <div className="component-body" id="work-body">
         <div className="project-menu">{mappedNames}</div>
         <div className="proj-left">
-          <div className="proj-description">{activeProject?.description}</div>
-          <div className="proj-tech">{activeProject?.tech}</div>
-          <div className="proj-link-mobile">
-            <span>{activeProject?.githubURL}</span>
-            <span>{activeProject?.siteURL}</span>
+          <div className="img-mobile-cont">
+            <img
+              className="img-mobile"
+              src={`https://${activeProject?.deskImg}`}
+              alt="screenshot of site on desktop"
+            />
+          </div>
+
+          <div className="proj-details">
+            <div className="proj-description">{activeProject?.description}</div>
+            <div className="proj-tech">
+              <ul className="tech-list">{mappedTech}</ul>
+            </div>
+            <div className="proj-link-mobile">
+              <a
+                target="_blank"
+                className="faux-button proj-btn"
+                href={activeProject?.githubURL}
+                rel="noreferrer"
+              >
+                Visit GitHub
+              </a>
+              <a
+                target="_blank"
+                className="faux-button proj-btn"
+                href={activeProject?.siteURL}
+                rel="noreferrer"
+              >
+                Visit Site
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@
     --med-gray: #9B9AA2;
     --pink: #E58C8A;
     --overlay-gray: rgba(60, 59, 64, .7);
+    --overlay-gradient: linear-gradient(to bottom, rgba(251, 255, 254, 0.7), rgba(229, 140, 138, .8));
     --gradient: linear-gradient(to top right, #E58C8A, #FBFFFE );
     --bord-pnk: 2px solid var(--pink);
     --radius: 3px;
