@@ -424,7 +424,7 @@ h3 {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  top: 80%;
+  /* top: 80%; */
 }
 
 .proj-btn {

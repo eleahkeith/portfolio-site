@@ -111,6 +111,30 @@
       margin: 10px;
     }
 
+    #work-body {
+      flex-direction: column;
+    }
+
+    .project-menu {
+      width: 33%;
+    }
+    .img-mobile-cont {
+      display: none;
+    }
+
+    .proj-left {
+      width: 33%;
+    }
+
+    .proj-details {
+      font-size: 1em;
+      height: 75%;
+    }
+
+    .project-menu-item {
+      cursor: pointer
+    }
+
   }
   
 /* large laptop/monitor */

@@ -194,6 +194,16 @@
       border: var(--bord-pnk);
     }
 
+
+    /* work styles */
+
+    .proj-left {
+      justify-content: space-around;
+    }
+
+    .proj-details {
+      justify-content: space-around;
+    }
     /* contact styles */
 
     .icon-set-mobile {
@@ -345,6 +355,12 @@
     .soc-icons {
       height: 40px;
       margin: 10px;
+    }
+
+
+
+    .proj-details {
+      height: 300px;
     }
 
   }
