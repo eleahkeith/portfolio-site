@@ -23,5 +23,5 @@ Priorities
 
 [bugs]
 [ ]nav bar is over the scroll bar on desktop
-[ ]scrollY/scrollTop measuring 0, need to fix component heights
+[x]scrollY/scrollTop measuring 0, need to fix component heights
 [ ]FOUT when page first loads

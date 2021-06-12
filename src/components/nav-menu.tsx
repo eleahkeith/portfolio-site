@@ -23,7 +23,7 @@ const NavMenu = () => {
               className="header-logo"
               src={HeaderLogo}
               onClick={() => {
-                console.log(window.pageYOffset);
+                setNavActive(false);
               }}
               alt="pink circle with white initials 'LK'"
             />
