@@ -76,7 +76,10 @@
       width: 50%;
     }
 
-
+    .pc-photo {
+      height: 100%;
+      width: auto;
+    }
 
     .swipe, .swipe-txt {
         display: none;
@@ -323,6 +326,11 @@
     height: 75%;
     width: 50%;
     justify-content: space-around;
+  }
+
+  .pc-photo {
+    height: 100%;
+    width: auto;
   }
 
   .tier2 {
