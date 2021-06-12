@@ -1,15 +1,10 @@
-Priorities
-[x]1. build contact and social media icons
-[ ]2. animations & style scroll bar
-[x]3. build work and style
-
-
+[lighthouse]
+[ ]tiny png on header-logo and all about photos
+[ ]add check links to make sure they are labelled 
 
 
 [tsx]
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
-[x]build out contact
-[x]build out work
 [ ]about - ignore y scrolls on internal container
 [ ]scrollbars - hide? style? 
 
@@ -17,9 +12,6 @@ Priorities
 [css]
 [ ]style for phone on side
 [ ]animations for elements on home page
-
-[backend]
-[x]contentful
 
 [bugs]
 [ ]nav bar is over the scroll bar on desktop

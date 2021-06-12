@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import '../styles/App.css';
 import BirthdayLuke from '../images/birthday-luke.png';
-import SamLuke from '../images/sam-luke.png';
+import SamLuke from '../images/sam-luke.jpeg';
 import PuppyLuke from '../images/puppy-luke.png';
 import PeakLuke from '../images/peak-luke.png';
 
