@@ -139,7 +139,7 @@ const Work = () => {
 
   useEffect(() => {
     if (formattedProjects?.length) {
-      setActiveProject(formattedProjects[0]);
+      setActiveProject(formattedProjects[1]);
     }
   }, [formattedProjects]);
 
@@ -211,6 +211,22 @@ const Work = () => {
                 Visit Site
               </a>
             </div>
+          </div>
+        </div>
+        <div className="proj-right">
+          <div className="mobile-cont">
+            <img
+              className="mobile-img-lrg"
+              src={`https://${activeProject?.mobileImg}`}
+              alt="screenshot of project on mobile screen"
+            />
+          </div>
+          <div className="desktop-cont">
+            <img
+              className="desktop-img-lrg"
+              src={`https://${activeProject?.deskImg}`}
+              alt="screenshot of project on desktop"
+            />
           </div>
         </div>
       </div>

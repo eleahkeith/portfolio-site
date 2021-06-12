@@ -363,27 +363,16 @@ h3 {
   width: 100%;
 }
 
+.proj-right {
+  display: none;
+}
+
 .img-mobile-cont {
   position: relative;
   height: auto;
   width: 100%;
   object-fit: contain;
 }
-
-/* .img-mobile-cont::after {
-  position: absolute;
-  content: ' ';
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: var(--overlay-gradient);
-  transition: var(--main-transition);
-}
-
-.img-mobile-cont::after:hover {
-  transform: opacity(0);
-} */
 
 .img-mobile {
   height: 100%;
