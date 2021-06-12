@@ -1,7 +1,7 @@
 Priorities
 [x]1. build contact and social media icons
 [ ]2. animations & style scroll bar
-[ ]3. build work and style
+[x]3. build work and style
 
 
 
@@ -9,7 +9,7 @@ Priorities
 [tsx]
 [ ]when y of name div equals 0, then get rid of name div and make banner div visible
 [x]build out contact
-[ ]build out work
+[x]build out work
 [ ]about - ignore y scrolls on internal container
 [ ]scrollbars - hide? style? 
 
@@ -19,9 +19,9 @@ Priorities
 [ ]animations for elements on home page
 
 [backend]
-[ ]contentful
+[x]contentful
 
 [bugs]
 [ ]nav bar is over the scroll bar on desktop
 [x]scrollY/scrollTop measuring 0, need to fix component heights
-[ ]FOUT when page first loads
+[x]FOUT when page first loads
