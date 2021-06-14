@@ -1,5 +1,5 @@
 [lighthouse]
-[ ]tiny png on header-logo and all about photos
+[x]tiny png on header-logo and all about photos
 [ ]add check links to make sure they are labelled 
 
 
@@ -13,6 +13,7 @@
 [ ]style for phone on side
 [ ]animations for elements on home page
 [ ]move elements to center my using margin auto
+[ ]set max width for components to abt 1200px
 
 
 [bugs]
