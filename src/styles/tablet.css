@@ -1,4 +1,13 @@
 @media only screen and (min-width: 700px) {
+
+  /* Modal */
+
+  .Modal {
+    top: 35%;
+    bottom: 40%;
+    left: 20%;
+    right: 20%;
+  }
     
     /* nav */
     .burger-icon {
