@@ -54,21 +54,33 @@
    }
   
 .nav-active {
-     transform: translateX(0%);
-     transition: var(--main-transition);
-   }
-  
+    transform: translateX(0%);
+    transition: var(--main-transition);
+}
+
 
 
 @media only screen and (min-width: 700px) {
-    .nav-hidden, .nav-active {
-        transform: translateX(0%);
-      }
-  
+.nav-hidden, .nav-active {
+    transform: translateX(0%);
+    }
+
 }
 
 
 @media only screen and (max-height: 849px) and (min-width: 1030px) {
+
+.nav-option::after {
+    transition: opacity .3s, transform .3s;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.nav-option:hover::after, a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+    
+
 .pc-photo {
     transition: var(--main-transition);
 
@@ -79,47 +91,100 @@
   }
 
 
-  .soc-icons {
-      transition: var(--main-transition);
-  }
+.soc-icons {
+    transition: var(--main-transition);
+}
 
-  .soc-icons:hover {
-      transform: var(--hover-move-up);
-  }
+.soc-icons:hover {
+    transform: var(--hover-move-up);
+}
 
-  .faux-button, .resume-btn {
-      transition: background-color .5s var(--bezier);
-  }
+.faux-button, .resume-btn {
+    transition: background-color .5s var(--bezier);
+}
 
-  .faux-button:hover, .resume-btn:hover {
-      background-color: var(--hover-background);
-  }
+.faux-button:hover, .resume-btn:hover {
+    background-color: var(--hover-background);
+}
+
+.mobile-cont::after {
+transition: opacity .5s ease-out;
+}
+
+.mobile-cont:hover::after {
+opacity: 0;
+}
+
+.desktop-cont::after {
+transition: opacity .5s ease-out;
+}
+
+.desktop-cont:hover::after {
+opacity: 0;
+}
+
+
 }
 
 
 @media only screen and (min-height: 850px) and (min-width: 1030px) {
-    .pc-photo {
-        transition: var(--main-transition);
+.nav-option::after {
+    transition: opacity .3s, transform .3s;
+    transform: translate3d(-100%, 0, 0);
+}
 
-    }
-    .pc-photo:hover {
-        transform: var(--hover-move-up);
+.nav-option:hover::after, a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.pc-photo {
+    transition: var(--main-transition);
+
+}
+.pc-photo:hover {
+    transform: var(--hover-move-up);
+}
+
+    .soc-icons {
+    transition: var(--main-transition);
+}
+
+.soc-icons:hover {
+    transform: var(--hover-move-up);
+}
+
+.faux-button, .resume-btn {
+    transition: background-color .5s var(--bezier);
+}
+
+.faux-button:hover, .resume-btn:hover {
+    background-color: var(--hover-background);
+}
+
+.project-active::after {
+    transition: opacity .3s, transform .3s;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+
+}
+
+.mobile-cont::after {
+    transition: opacity .5s ease-out;
     }
 
-      .soc-icons {
-        transition: var(--main-transition);
-    }
-  
-    .soc-icons:hover {
-        transform: var(--hover-move-up);
+.mobile-cont:hover::after {
+    opacity: 0;
     }
 
-    .faux-button, .resume-btn {
-        transition: background-color .5s var(--bezier);
+.desktop-cont::after {
+    transition: opacity .5s ease-out;
     }
-  
-    .faux-button:hover, .resume-btn:hover {
-        background-color: var(--hover-background);
+
+    .desktop-cont:hover::after {
+    opacity: 0;
     }
   
 }
