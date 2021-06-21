@@ -5,7 +5,7 @@ const Skills = () => {
   const explainer = '(what is this?)';
   return (
     <>
-      <div className="component" id="skills">
+      <section className="component" id="skills">
         <div className="component-title">
           <h1>What I Do Well</h1>
         </div>
@@ -56,7 +56,7 @@ const Skills = () => {
             want my CV?
           </a>
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -3,7 +3,7 @@ import LeahPhoto from '../images/leah-photo.jpg';
 
 const Home = () => {
   return (
-    <div className="component" id="home">
+    <section className="component" id="home">
       <div className="home-text">
         <div className="greeting">Hello! My name is</div>
         <div className="name">Leah Keith</div>
@@ -36,7 +36,7 @@ const Home = () => {
           Email Me
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

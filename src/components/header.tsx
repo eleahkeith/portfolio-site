@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import HeaderLogo from '../images/header-logo.png';
 import { IconSetMobile } from './icons-mobile';
 
-const NavMenu = () => {
+const Header = () => {
   const [navActive, setNavActive] = useState<boolean>(false);
 
   const navToggle = () => {
@@ -10,7 +10,7 @@ const NavMenu = () => {
   };
 
   return (
-    <>
+    <header>
       <div
         className={`nav-overlay ${
           navActive ? 'nav-overlay-active' : 'nav-overlay-hidden'
@@ -77,8 +77,8 @@ const NavMenu = () => {
           <IconSetMobile />
         </div>
       </div>
-    </>
+    </header>
   );
 };
 
-export default NavMenu;
+export default Header;

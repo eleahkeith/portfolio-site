@@ -152,7 +152,7 @@ const Work = () => {
 
   // creates menu of projects
   const mappedNames = formattedProjects?.map((project) => (
-    <div
+    <article
       key={project.projName}
       id={project.projName}
       className={`project-menu-item ${
@@ -163,7 +163,7 @@ const Work = () => {
       onClick={() => handleClick(project.projName)}
     >
       {project.projName}
-    </div>
+    </article>
   ));
 
   const mappedTech = activeProject?.tech.map((techItem) => (
@@ -172,7 +172,7 @@ const Work = () => {
     </li>
   ));
   return (
-    <div className="component" id="work">
+    <section className="component" id="work">
       <div className="component-title">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1>What I've Made</h1>
@@ -230,7 +230,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

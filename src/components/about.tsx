@@ -15,7 +15,7 @@ const About = () => {
   };
 
   return (
-    <div className="component" id="about">
+    <section className="component" id="about">
       <div className="component-title">
         <h1>Who I Am</h1>
       </div>
@@ -117,7 +117,7 @@ const About = () => {
           <span className="photo-modal-text">Ask and you shall receive!</span>
         </div>
       </Modal>
-    </div>
+    </section>
   );
 };
 

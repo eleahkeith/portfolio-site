@@ -3,7 +3,7 @@ import { IconSetMobile } from './icons-mobile';
 
 const Contact = () => {
   return (
-    <div className="component" id="contact">
+    <section className="component" id="contact">
       <div className="component-title">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1>Let's Talk</h1>
@@ -27,7 +27,7 @@ const Contact = () => {
           <IconSetMobile />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
