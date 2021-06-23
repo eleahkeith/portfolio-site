@@ -98,7 +98,7 @@ h3 {
   align-items: center;
 }
 
-.header-logo {
+header .logo {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -174,7 +174,7 @@ h3 {
 
 
 
- .nav-menu {
+ nav.menu {
   align-items: center;
   height: 50%;
   margin-top: 20%;
@@ -186,11 +186,11 @@ h3 {
 
 
 
- .component-title {
+ .component h1 {
    padding: 25px 10px 20px 10px;
  }
 
- .component-body {
+ .component .body {
    position: relative;
    margin: 10px 20px 10px 20px;
    padding-bottom: 50px;
@@ -198,7 +198,7 @@ h3 {
    color: var(--white);
  }
 
-  .home-button-cont {
+  #home .button-cont {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
@@ -209,7 +209,7 @@ h3 {
     color: var(--pink);
     font-weight: bold;
     font-size: 1em;
-    background: var(--black);
+    background: transparent;
     border: var(--bord-pnk);
     border-radius: var(--radius);
     text-align: center;
@@ -217,7 +217,7 @@ h3 {
   }
 
 
-   .btn-home-page {
+   #home .faux-button {
      height: 50px;
      width: 150px;
    }
@@ -230,7 +230,7 @@ h3 {
   justify-content: flex-start;
 }
 
-.home-text {
+#home #text {
   height: 70%;
   margin: 0 20px 0 20px;
 }
@@ -266,7 +266,7 @@ h3 {
   font-size: 1em;
 }
 
-.intro-p {
+p.intro {
   color: var(--white);
   text-align: center;
   letter-spacing: 1px;
@@ -284,21 +284,17 @@ h3 {
   margin-top: 0px;
 }
 
-.skills-cont {
+.list-cont {
   width: 100%;
   padding-top: 10px;
 }
 
-.skills-subhead {
+#skills h2 {
   text-align: left;
   width: 100%;
 }
 
-.tech-skills-cont {
-  text-align: left;
-}
-
-.certs-cont {
+.list-cont#certs {
   display: none;
 }
 
@@ -331,11 +327,11 @@ h3 {
   text-decoration: underline;
 }
 
-.skills-list {
+ul.skills {
   padding-top: 10px;
 }
 
-.resume-btn {
+a.resume {
   position: absolute;
   top: -30px;
   left: 25%;
@@ -357,7 +353,7 @@ h3 {
   justify-content: space-between;
 }
 
-.project-menu {
+#work nav {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -384,14 +380,14 @@ h3 {
 
 }
 
-.proj-left {
+#work #left {
   align-items: center;
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.proj-right {
+#work #right {
   display: none;
 }
 
@@ -402,7 +398,7 @@ h3 {
   object-fit: contain;
 }
 
-.img-mobile {
+.img-mobile-cont img{
   height: 100%;
   width: 100%;
 }
@@ -418,13 +414,13 @@ h3 {
   border-radius: var(--radius);
 
 }
-.proj-description {
+.proj-details .description {
   background-color: var(--lighter-black);
   padding: 10px;
   
 }
 
-.tech-list {
+ul.tech {
   display: flex;
   align-content: flex-start;
   justify-content: flex-start;
@@ -437,25 +433,24 @@ h3 {
 }
 
 
-.proj-link-mobile {
+.proj-details .link-mobile {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
   /* top: 80%; */
 }
 
-.proj-btn {
+#work .faux-button {
   width: 125px;
-  background: transparent;
 }
 
 /* about styles */
 
-#about {
+section#about {
   font-size: 1em;
 }
 
-.about-text {
+#about #text {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
@@ -471,7 +466,7 @@ h3 {
 
 
 
-.about-section {
+#about section {
 
   margin-right: 250px;
   width: 100%;
@@ -550,11 +545,11 @@ h3 {
   margin: 10px;
 }
 
-.contact-subhead {
+#contact h2 {
   width: 100%;
 }
 
-.contact-list {
+ul.contact {
   margin: 10px 0 20px 0;
   width: 100%;
 }
@@ -564,7 +559,7 @@ li::before {
   padding: 15px;
 }
 
-.icons-contact {
+#contact .icons {
   flex-direction: row;
   justify-content: center;
   width: 70%;
@@ -592,11 +587,11 @@ li::before {
     padding-bottom: 30px;
   }
 
-  .home-text {
+  #home #text {
     height: auto;
   }
 
-  .intro-p {
+  p.intro {
     font-size: 1em;
     padding-bottom: 25px;
   }
@@ -610,21 +605,21 @@ li::before {
     width: 90%;
   }
 
-  .about-text {
+  #about-body {
     font-size: .85em;
   }
 
-  .skills-cont {
+  .list-cont {
     font-size: .85em;
   }
 
-  .resume-btn {
+  a.resume {
     font-weight: regular;
     width: 60%;
     left: 20%;    
   }
 
-  .icons-contact {
+  #contact .icons {
     width: 100%;
   }
 

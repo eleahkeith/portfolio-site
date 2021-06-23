@@ -4,13 +4,13 @@ import { IconSetMobile } from './icons-mobile';
 const Contact = () => {
   return (
     <section className="component" id="contact">
-      <div className="component-title">
+      <div>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1>Let's Talk</h1>
       </div>
-      <div className="component-body" id="contact-body">
-        <h2 className="contact-subhead">if you have...</h2>
-        <ul className="contact-list">
+      <div className="body" id="contact-body">
+        <h2>if you have...</h2>
+        <ul className="contact">
           <li>questions</li>
           <li>feedback</li>
           <li>ideas</li>
@@ -23,7 +23,7 @@ const Contact = () => {
         <span className="reach-out">
           ...please reach out via any of the options in the bottom right corner!
         </span>
-        <div className="icons-contact">
+        <div className="icons">
           <IconSetMobile />
         </div>
       </div>

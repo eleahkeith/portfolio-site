@@ -20,7 +20,7 @@ const Header = () => {
         <div className="banner-container">
           <a href="#home">
             <img
-              className="header-logo"
+              className="logo"
               src={HeaderLogo}
               onClick={() => {
                 setNavActive(false);
@@ -43,33 +43,17 @@ const Header = () => {
         <div
           className={`nav-container ${navActive ? 'nav-active' : 'nav-hidden'}`}
         >
-          <nav className="nav-menu">
-            <a
-              className="nav-option"
-              onClick={() => setNavActive(false)}
-              href="#about"
-            >
+          <nav className="menu">
+            <a onClick={() => setNavActive(false)} href="#about">
               About
             </a>
-            <a
-              className="nav-option"
-              onClick={() => setNavActive(false)}
-              href="#skills"
-            >
+            <a onClick={() => setNavActive(false)} href="#skills">
               Skills
             </a>
-            <a
-              className="nav-option"
-              onClick={() => setNavActive(false)}
-              href="#work"
-            >
+            <a onClick={() => setNavActive(false)} href="#work">
               Work
             </a>
-            <a
-              className="nav-option"
-              onClick={() => setNavActive(false)}
-              href="#contact"
-            >
+            <a onClick={() => setNavActive(false)} href="#contact">
               Contact
             </a>
           </nav>

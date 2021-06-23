@@ -6,13 +6,13 @@ const Skills = () => {
   return (
     <>
       <section className="component" id="skills">
-        <div className="component-title">
+        <div>
           <h1>What I Do Well</h1>
         </div>
-        <div className="component-body" id="skills-body">
-          <div className="skills-cont tech-skills-cont">
-            <h2 className="skills-subhead">Tech Skills</h2>
-            <ul className="skills-list">
+        <div className="body" id="skills-body">
+          <div className="list-cont">
+            <h2>Tech Skills</h2>
+            <ul className="skills">
               <li>React</li>
               <li>TypeScript</li>
               <li>JavaScript / ES6</li>
@@ -23,9 +23,9 @@ const Skills = () => {
               <li>Netlify Deployments</li>
             </ul>
           </div>
-          <div className="skills-cont bonus-skills-cont">
-            <h2 className="skills-subhead">Bonus Skills</h2>
-            <ul className="skills-list">
+          <div className="list-cont" id="bonus">
+            <h2>Bonus Skills</h2>
+            <ul className="skills">
               <li>Agile</li>
               <li>Project Management</li>
               <li>
@@ -43,16 +43,16 @@ const Skills = () => {
               <li>Collaboration & Team Building</li>
             </ul>
           </div>
-          <div className="skills-cont certs-cont">
-            <h2 className="skills-subhead">Education & Certifications</h2>
-            <ul className="skills-list">
+          <div className="list-cont" id="certs">
+            <h2>Education & Certifications</h2>
+            <ul className="skills">
               <li>Web Development Certificate (23 Code Street, 2020)</li>
               <li>Lean Six Sigma Green Belt Certification (USF, 2020)</li>
               <li>Certified Associate in Project Management (PMI, 2019)</li>
               <li>BA English with honours (UNCG, 2010)</li>
             </ul>
           </div>
-          <a href={CV} target="_blank" className="resume-btn" rel="noreferrer">
+          <a href={CV} target="_blank" className="resume" rel="noreferrer">
             want my CV?
           </a>
         </div>

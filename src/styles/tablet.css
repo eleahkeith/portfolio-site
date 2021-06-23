@@ -28,7 +28,7 @@
       background: transparent;
     }
   
-    .nav-menu {
+    nav.menu {
       flex-direction: row;
       float: right;
       height: 10vh;
@@ -46,7 +46,7 @@
       width: 50%;
     }
   
-    .header-logo {
+    header .logo {
       align-self: center;
       height: 50px;
       width: 50px;
@@ -56,7 +56,7 @@
   
     /* components */
   
-    .component-body {
+    .component .body {
       margin: 50px;
     }
 
@@ -73,7 +73,7 @@
       flex-wrap: wrap;
     }
   
-    .home-text {
+    #home #text {
       margin-left: 50px;
       justify-content: flex-start;
       margin-top: 50px;
@@ -104,12 +104,12 @@
       padding-bottom: 90px;
     }
   
-    .intro-p {
+    p.intro {
       font-size: 1.25em;
       text-align: left;
     }
   
-    .home-button-cont {
+    #home .button-cont {
       width: 60%;
       justify-self: center;
     }
@@ -146,11 +146,11 @@
     }
   
     /* about styles */
-    .about-text {
+    #about #text {
       font-size: 1.25em;
     }
   
-    .about-section {
+    #about #text {
         height: 50%;
     }
 
@@ -178,12 +178,12 @@
       font-size: 1.25em;
     }
 
-    .skills-cont {
+    .list-cont {
       text-align: left;
       width: 50%;
     }
 
-    .skills-list {
+    ul.skills {
       text-align: left;
     }
 
@@ -193,7 +193,7 @@
       text-align: center;
     }
 
-    .resume-btn {
+    a.resume {
       position: relative;
       left: 0;
       width: 30%;
@@ -206,7 +206,7 @@
 
     /* work styles */
 
-    .proj-left {
+    #work #left {
       justify-content: space-around;
     }
 
@@ -239,7 +239,7 @@
       font-size: 1.5em;
     }
 
-    .contact-list {
+    ul.contact {
       margin: 50px 0 50px 0;
     }
 
@@ -259,7 +259,7 @@
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
   
-    .nav-menu {
+    nav.menu{
       font-size: 1.5em;
   
     }
@@ -282,7 +282,7 @@
       padding-bottom: 90px;
     }
   
-    .intro-p {
+    p.intro {
       font-size: 1.25em;
     }
   
@@ -292,14 +292,14 @@
 
     /* about styles */
   
-    .component-body {
+    .component .body {
         flex-direction: column;
     }
-    .about-text {
+    #about-body {
       width: 100%;
     }
 
-    .about-section {
+    #about #text {
       height: 50%;
     }
   
