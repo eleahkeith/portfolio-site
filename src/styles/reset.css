@@ -52,7 +52,7 @@ input, button {
 	-webkit-border-radius: 0;
 	border-radius: 0;}
 
-div, nav {
+div, nav, section, article, main {
 	display: flex;
 	flex-direction: column;
 

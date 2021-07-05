@@ -1,16 +1,16 @@
 /* Small laptop/monitor */
 @media only screen and (max-height: 849px) and (min-width: 1030px) {
 
-.component-body {
+.component .body {
   flex-direction: row;
 }
 
-  .nav-option {
+  nav a {
     position: relative;
     overflow: hidden;
   }
  
-  .nav-option::after {
+  nav a::after {
     position: absolute;
     content: ' ';
     bottom: -2px;
@@ -25,7 +25,7 @@
     font-size: 6em;
   }
 
-    .about-text {
+    #about #text {
       width: 50%;
         flex-wrap: nowrap;
         overflow-x: hidden;
@@ -38,10 +38,10 @@
     #s4 { padding: 0;}
 
 
-    .about-subhead {
+    #about h3 {
         display: none;
     }
-    .about-section {
+    #about section {
         margin: 0;
         height: 100%;
     }
@@ -83,11 +83,11 @@
       margin-top: 20px;
     }
 
-    .skills-subhead {
+    #skills h2 {
       text-align: center;
     }
 
-    .skills-cont {
+    .list-cont {
       align-items: center;
     }
 
@@ -111,7 +111,7 @@
       flex-wrap: wrap;
     }
 
-    .project-menu {
+    #work nav{
       width: 100%;
       justify-content: flex-start;
       font-size: 1.1em;
@@ -125,11 +125,11 @@
       display: none;
     }
 
-    .proj-left {
+    #work #left {
       width: 33%;
     }
 
-    .proj-right {
+    #work #right {
       position: relative;
       display: flex;
       flex-direction: row;
@@ -157,7 +157,7 @@
       z-index: 1;
     }
   
-    .mobile-img-lrg {
+    .mobile-cont img {
       height: 100%;
       object-fit: contain;
     }
@@ -167,7 +167,7 @@
       height: 55%;
     }
   
-    .desktop-img-lrg {
+    .desktop-cont img {
       object-fit: contain;
       height: 100%;
       width: auto;
@@ -210,11 +210,11 @@
     padding-top: 15vh;
   }
 
-  .component-body {
+  .component .body {
     flex-direction: row;
   }
 
-  .header-logo {
+  header .logo {
     align-self: center;
     height: 100px;
     width: 100px;
@@ -222,16 +222,16 @@
     left: 20px;
   }
 
-  .toolbar, .nav-menu, .nav-container {
+  .toolbar, nav.menu, .nav-container {
     height: 15vh;
   }
 
-  .nav-option {
+  nav a {
     position: relative;
     overflow: hidden;
   }
   
-  .nav-option::after {
+  nav a::after {
     position: absolute;
     content: ' ';
     bottom: -2px;
@@ -260,7 +260,7 @@
     padding-bottom: 90px;
   }
 
-  .intro-p {
+  p.intro {
     font-size: 1.75em;
   }
 
@@ -270,12 +270,12 @@
 
   /* about styles */
 
-  .about-section {
+  #about section {
     margin: 0;
     height: 90%;
   }
 
-  .about-text {
+  #about #text {
     height: 100%;
     flex-wrap: nowrap;
     overflow-x: hidden;
@@ -287,7 +287,7 @@
     display: none;
   }
 
-  .about-subhead {
+  #about h3 {
       display: none;
   }
 
@@ -342,7 +342,7 @@
     justify-content: space-around;
   }
 
-  .about-text {
+  #about #text {
       font-size: 1.15em;
   }
 
@@ -353,11 +353,11 @@
     margin-top: 20px;
   }
 
-  .skills-cont {
+  .list-cont {
     align-items: center;
   }
 
-  .skills-subhead {
+  #skills h2 {
     text-align: center;
   }
 
@@ -384,7 +384,7 @@
     flex-wrap: wrap;
   }
 
-  .project-menu {
+  #work nav{
     width: 100%;
     font-size: 1.1em;
 
@@ -393,11 +393,11 @@
     display: none;
   }
 
-  .proj-left {
+  #work #left {
     width: 33%;
   }
 
-  .proj-right {
+  #work #right {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -413,7 +413,7 @@
     height: 75%;
   }
 
-  .project-menu {
+  #work nav{
     justify-content: flex-start;
   }
 
@@ -430,7 +430,7 @@
 
   }
 
-  .mobile-img-lrg {
+  .mobile-cont img {
     position: relative;
     height: 100%;
     object-fit: contain;
@@ -451,7 +451,7 @@
     width: 55%;
   }
 
-  .desktop-img-lrg {
+  .desktop-cont img {
     object-fit: contain;
     height: 100%;
     width: auto;

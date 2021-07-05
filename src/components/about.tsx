@@ -15,14 +15,14 @@ const About = () => {
   };
 
   return (
-    <div className="component" id="about">
-      <div className="component-title">
+    <section className="component" id="about">
+      <div>
         <h1>Who I Am</h1>
       </div>
-      <div className="component-body" id="about-body">
-        <div className="about-text">
-          <div className="about-section" id="s1">
-            <h3 className="about-subhead">Welcome!</h3>
+      <div className="body" id="about-body">
+        <div id="text">
+          <section id="s1">
+            <h3>Welcome!</h3>
             <p>
               My name is Leah and I'm a front-end software engineer. I am
               passionate about creating responsive, accessible websites for all
@@ -30,35 +30,35 @@ const About = () => {
               but I love learning new languages and frameworks and I'm
               constantly growing my knowledge base.
             </p>
-          </div>
-          <div className="about-section" id="s2">
-            <h3 className="about-subhead">Career</h3>
+          </section>
+          <section id="s2">
+            <h3>Career</h3>
             <p>
               My software development career began in early 2020 when I attended
-              a web development bootcamp at <a href="#">23 Code Street</a> based
+              a web development course at <a href="#">23 Code Street</a> based
               in London. My pre-dev career history includes project manager,
               group account manager at a large insurance company, and a friendly
               retail manager.
             </p>
-          </div>
-          <div className="about-section" id="s3">
-            <h3 className="about-subhead">Philosophy</h3>
+          </section>
+          <section id="s3">
+            <h3>Philosophy</h3>
             <p>
               Because I've spent so many years working with people and clients,
               I take a people-first approach to development. Tech exists to
               improve the lives of its stakeholders, so the client or user
               should be at the center of everything we do.
             </p>
-          </div>
-          <div className="about-section" id="s4">
-            <h3 className="about-subhead">Me IRL</h3>
+          </section>
+          <section id="s4">
+            <h3>Me IRL</h3>
             <p>
               Outside of development, I'm an avid knitter, gamer, and baker. I
               am from the US originally, but I now live in the UK with my dog
               Luke and my husband Sam, both of whom I'm completely obsessed
               with.
             </p>
-          </div>
+          </section>
         </div>
         <div className="swipe">
           « <span className="swipe-txt">swipe for more</span> »
@@ -117,7 +117,7 @@ const About = () => {
           <span className="photo-modal-text">Ask and you shall receive!</span>
         </div>
       </Modal>
-    </div>
+    </section>
   );
 };
 

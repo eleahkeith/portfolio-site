@@ -1,3 +1,5 @@
+@import url('./variables.css');
+
 /* burger icon */
 
 .line1-active {
@@ -70,12 +72,12 @@
 
 @media only screen and (max-height: 849px) and (min-width: 1030px) {
 
-.nav-option::after {
+nav a::after {
     transition: opacity .3s, transform .3s;
     transform: translate3d(-100%, 0, 0);
 }
 
-.nav-option:hover::after, a:focus::after {
+nav a:hover::after, a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
@@ -99,11 +101,11 @@
     transform: var(--hover-move-up);
 }
 
-.faux-button, .resume-btn {
+.faux-button, a.resume {
     transition: background-color .5s var(--bezier);
 }
 
-.faux-button:hover, .resume-btn:hover {
+.faux-button:hover, a.resume:hover {
     background-color: var(--hover-background);
 }
 
@@ -128,12 +130,12 @@ opacity: 0;
 
 
 @media only screen and (min-height: 850px) and (min-width: 1030px) {
-.nav-option::after {
+nav a::after {
     transition: opacity .3s, transform .3s;
     transform: translate3d(-100%, 0, 0);
 }
 
-.nav-option:hover::after, a:focus::after {
+nav a:hover::after, a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
@@ -154,11 +156,11 @@ opacity: 0;
     transform: var(--hover-move-up);
 }
 
-.faux-button, .resume-btn {
+.faux-button, a.resume {
     transition: background-color .5s var(--bezier);
 }
 
-.faux-button:hover, .resume-btn:hover {
+.faux-button:hover, a.resume:hover {
     background-color: var(--hover-background);
 }
 

@@ -152,7 +152,7 @@ const Work = () => {
 
   // creates menu of projects
   const mappedNames = formattedProjects?.map((project) => (
-    <div
+    <article
       key={project.projName}
       id={project.projName}
       className={`project-menu-item ${
@@ -163,40 +163,35 @@ const Work = () => {
       onClick={() => handleClick(project.projName)}
     >
       {project.projName}
-    </div>
+    </article>
   ));
 
   const mappedTech = activeProject?.tech.map((techItem) => (
-    <li key={techItem} className="tech-item">
-      {techItem}
-    </li>
+    <li key={techItem}>{techItem}</li>
   ));
   return (
-    <div className="component" id="work">
-      <div className="component-title">
+    <section className="component" id="work">
+      <div>
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         <h1>What I've Made</h1>
       </div>
-      <div className="component-body" id="work-body">
-        <div className="project-menu">{mappedNames}</div>
-        <div className="proj-left">
+      <div className="body" id="work-body">
+        <nav>{mappedNames}</nav>
+        <div id="left">
           <div className="img-mobile-cont">
             <img
-              className="img-mobile"
               src={`https://${activeProject?.deskImg}`}
               alt="screenshot of site on desktop"
             />
           </div>
 
           <div className="proj-details">
-            <div className="proj-description">{activeProject?.description}</div>
-            <div className="proj-tech">
-              <ul className="tech-list">{mappedTech}</ul>
-            </div>
-            <div className="proj-link-mobile">
+            <div className="description">{activeProject?.description}</div>
+            <ul className="tech">{mappedTech}</ul>
+            <div className="link-mobile">
               <a
                 target="_blank"
-                className="faux-button proj-btn"
+                className="faux-button"
                 href={activeProject?.githubURL}
                 rel="noreferrer"
               >
@@ -204,7 +199,7 @@ const Work = () => {
               </a>
               <a
                 target="_blank"
-                className="faux-button proj-btn"
+                className="faux-button"
                 href={activeProject?.siteURL}
                 rel="noreferrer"
               >
@@ -213,24 +208,22 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="proj-right">
+        <div id="right">
           <div className="mobile-cont">
             <img
-              className="mobile-img-lrg"
               src={`https://${activeProject?.mobileImg}`}
               alt="screenshot of project on mobile screen"
             />
           </div>
           <div className="desktop-cont">
             <img
-              className="desktop-img-lrg"
               src={`https://${activeProject?.deskImg}`}
               alt="screenshot of project on desktop"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
