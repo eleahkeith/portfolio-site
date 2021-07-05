@@ -35,7 +35,7 @@ const About = () => {
             <h3>Career</h3>
             <p>
               My software development career began in early 2020 when I attended
-              a web development bootcamp at <a href="#">23 Code Street</a> based
+              a web development course at <a href="#">23 Code Street</a> based
               in London. My pre-dev career history includes project manager,
               group account manager at a large insurance company, and a friendly
               retail manager.
